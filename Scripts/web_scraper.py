@@ -60,6 +60,9 @@ for idx, letter in enumerate(letters):
 
     with open("natmed_data" + str(it) + ".json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+        it += 1
+    
+    data = {}
 
     letters = driver.find_elements(By.CSS_SELECTOR, "#letterTabs .nav-link")
     btn = letters[idx]
