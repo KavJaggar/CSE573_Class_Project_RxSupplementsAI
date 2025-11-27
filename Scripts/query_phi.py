@@ -35,11 +35,11 @@ if __name__ == "__main__":
     index = faiss.read_index("../CorpusData/natmed_data.faiss")
 
     q_emb = model.encode([user_prompt], convert_to_numpy=True)
-    D, I = index.search(q_emb, 3)
+    D, I = index.search(q_emb, 1)
     results = [documents[i] for i in I[0]]
     context = ""
     for result in results:
-        context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "\n"
+        context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "                     "
         print(result["id"])
     
     context = re.sub(r'\([\d,\s]+\)', '', context)
@@ -61,7 +61,7 @@ if __name__ == "__main__":
             {user_prompt}
 
             Write a direct answer to the user and do not provide any information not necessary to answer their question. 
-            Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context.
+            Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
 
             """
     
