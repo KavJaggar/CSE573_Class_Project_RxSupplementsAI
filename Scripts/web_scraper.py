@@ -114,7 +114,7 @@ for idx, letter in enumerate(letters):
             section_body = "\n".join(lines[1:]).strip()
             data[item_name]["sections"][section_name] = section_body
         
-        print(data[item_name])
+        #print(data[item_name])
 
         # Go back to the list page
         driver.back()
