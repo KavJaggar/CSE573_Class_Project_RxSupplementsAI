@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import json
 
 options = Options()
 options.add_argument("--start-maximized") 
@@ -33,31 +34,97 @@ box.send_keys("Cour@g3W1ns")
 
 driver.find_element(By.ID, "kc-login").click()
 
+time.sleep(2)
+
+cookiebutton = driver.find_element(By.ID, "onetrust-accept-btn-handler")
+cookiebutton.click()
+
+time.sleep(2)
+
 driver.get("https://naturalmedicines.therapeuticresearch.com/IngredientsTherapiesMonographs")
+
+time.sleep(2)
 
 checkbox = driver.find_element(By.ID, "food-herb-supplement")
 checkbox.click()
 
-searchbutton = driver.find_element(By.NAME, "search-monographs")
-searchbutton.click()
-
 letters = driver.find_elements(By.CSS_SELECTOR, "#letterTabs .nav-link")
 
+time.sleep(2)
+
+data = {}
+
+it = 1
+
 for idx, letter in enumerate(letters):
-    try:
+
+    with open("natmed_data" + it + ".json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+    letters = driver.find_elements(By.CSS_SELECTOR, "#letterTabs .nav-link")
+    btn = letters[idx]
+
+    text = btn.text.strip()
+    print(f"Clicking: {text}")
+
+    driver.execute_script("arguments[0].click();", btn)
+
+    time.sleep(1)
+
+    items = driver.find_elements(By.CSS_SELECTOR, "#monographList .list__item a")
+
+    for j in range(len(items)):
         letters = driver.find_elements(By.CSS_SELECTOR, "#letterTabs .nav-link")
         btn = letters[idx]
-
-        text = btn.text.strip()
-        print(f"Clicking: {text}")
-
-        driver.execute_script("arguments[0].scrollIntoView(true);", btn)
-
-        btn.click()
-
+        driver.execute_script("arguments[0].click();", btn)
         time.sleep(1)
+        items = driver.find_elements(By.CSS_SELECTOR, "#monographList .list__item a")
+        item = items[j]
+        item_name = item.text.strip()
+        print(f"   -> Visiting item: {item_name}")
+        driver.execute_script("arguments[0].setAttribute('target','_self')", item)
 
-    except Exception as e:
-        print(f"Error clicking letter tab")
+        driver.execute_script("arguments[0].click();", item)
+        time.sleep(2)
+
+        #scrape data here
+        more_buttons = driver.find_elements(By.CSS_SELECTOR, "button.custom-details-toggle")        
+        for more_button in more_buttons:
+            driver.execute_script("arguments[0].click();", more_button)
+
+        data[item_name] = {}
+        data[item_name]["sections"] = {}
+
+        overview_div = driver.find_element(By.CSS_SELECTOR, "div.rich-text.mb-5")
+
+        block_text = overview_div.text.strip()
+        lines = block_text.split("\n")
+        section_name = lines[0].strip()
+        section_body = "\n".join(lines[1:]).strip()
+
+        data[item_name]["sections"][section_name] = section_body
+
+
+        accordian_panels = driver.find_elements(By.CLASS_NAME, "accordion-panel ")
+        for panel in accordian_panels:
+            #print(panel.text.strip())
+            block_text = panel.text.strip()
+            lines = block_text.split("\n")
+            section_name = lines[0].strip() 
+            section_body = "\n".join(lines[1:]).strip()
+            data[item_name]["sections"][section_name] = section_body
+        
+        print(data[item_name])
+
+        # Go back to the list page
+        driver.back()
+        time.sleep(1.5)  
+        checkbox = driver.find_element(By.ID, "food-herb-supplement")
+        checkbox.click()
+        checkbox.click()
+        time.sleep(1.5)  
+
+
+    
 
 
