@@ -9,7 +9,7 @@ def stream_query(prompt):
     url = "http://localhost:11434/api/generate"
 
     payload = {
-        "model": "phi3",
+        "model": "mistral",
         "prompt": prompt,
         "stream": True
     }
@@ -25,7 +25,7 @@ def stream_query(prompt):
 
 
 if __name__ == "__main__":
-    user_prompt = "I'm thinking about using creatine orally. Are there any potential side effects that I need to worry about?"
+    user_prompt = "I've been experiencing what feels like an allergic rash. Could this be due to my oral Vitamin B12 supplement?"
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -35,11 +35,12 @@ if __name__ == "__main__":
     index = faiss.read_index("../CorpusData/natmed_data.faiss")
 
     q_emb = model.encode([user_prompt], convert_to_numpy=True)
-    D, I = index.search(q_emb, 1)
+    D, I = index.search(q_emb, 3)
     results = [documents[i] for i in I[0]]
     context = ""
     for result in results:
-        context += result["id"] + ": " + result["text"] + "\n"
+        context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "\n"
+        print(result["id"])
     
     context = re.sub(r'\([\d,\s]+\)', '', context)
 
@@ -50,19 +51,19 @@ if __name__ == "__main__":
             Do not mention the information, the source, or that you were given context. 
             Do not say “according to the context,” “the document says,” or anything similar.
 
-            If the information is relevant, incorporate it naturally into your answer. 
+            If the information is relevant, incorporate it naturally into your human-like answer. 
             If it is not relevant, tell the user you do not know. 
 
             Information:
             "{context}"
-            Context Reference Source - NatMedPro
 
             User question:
             {user_prompt}
 
-            Write a direct answer to the user. Include citations to the sources of the information you use at the end of your answer. Just mention the name of the sources like "Sources: ..."
+            Write a direct answer to the user and do not provide any information not necessary to answer their question. 
+            Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context.
 
             """
     
-    print(prompt)
+    #print(prompt)
     stream_query(prompt)
