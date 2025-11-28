@@ -4,6 +4,8 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 import re
+import pickle
+from rank_bm25 import BM25Okapi
 
 def stream_query(prompt):
     url = "http://localhost:11434/api/generate"
@@ -41,6 +43,25 @@ if __name__ == "__main__":
     for result in results:
         context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "                     "
         print(result["id"])
+    
+    #BM25 RETRIEVAL. DOES NOT WORK VERY WELL. JUST RETURNS NONSENSE IN TESTING SO FAR. BUT MODEL PERFORMS WELL WITH NOT BEING CONFUSED BY NONSENSICAL CONTEXT.
+    # def tokenize(text):
+    #     return re.findall(r"\w+", text.lower())
+    
+    # with open("../CorpusData/bm25_index.pkl", "rb") as f:
+    #     data = pickle.load(f)
+
+    # passages = data["documents"]
+    # bm25 = data["bm25"]
+
+    # tokenized_query = tokenize(user_prompt)
+
+    # scores = bm25.get_scores(tokenized_query)
+    # top_indices = scores.argsort()[::-1][:2]
+
+    # for idx in top_indices:
+    #     context += str(passages[idx]) + "                   "
+    #     print(passages[idx], scores[idx])
     
     context = re.sub(r'\([\d,\s]+\)', '', context)
 
