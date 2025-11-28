@@ -25,7 +25,7 @@ def stream_query(prompt):
 
 
 if __name__ == "__main__":
-    user_prompt = "I've been experiencing what feels like an allergic rash. Could this be due to my oral Vitamin B12 supplement?"
+    user_prompt = "I've heard that creatine has some bad side effects. Are there actually any bad side effects? What are they?"
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     index = faiss.read_index("../CorpusData/natmed_data.faiss")
 
     q_emb = model.encode([user_prompt], convert_to_numpy=True)
-    D, I = index.search(q_emb, 1)
+    D, I = index.search(q_emb, 3)
     results = [documents[i] for i in I[0]]
     context = ""
     for result in results:

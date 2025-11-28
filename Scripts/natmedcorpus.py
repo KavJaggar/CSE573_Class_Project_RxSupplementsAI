@@ -3,23 +3,31 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 
+def chunk_text(text, max_length):
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), max_length):
+        chunks.append(" ".join(words[i:i+max_length]))
+    return chunks
 
 documents = []
 
 for i in range(2, 28):
-
-    with open("../NatMedData/natmed_data" + str(i) + ".json", "r", encoding="utf-8") as f:
+    with open(f"../NatMedData/natmed_data{i}.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     for herb, content in data.items():
         sections = content.get("sections", {})
         for section_name, section_text in sections.items():
-            documents.append({
-                "id": f"{herb}-{section_name}",
-                "herb": herb,
-                "section": section_name,
-                "text": section_text.strip()
-            })
+            section_text = section_text.strip()
+            chunks = chunk_text(section_text, max_length=150) 
+            for idx, chunk in enumerate(chunks):
+                documents.append({
+                    "id": f"{herb}-{section_name}-{idx}",
+                    "herb": herb,
+                    "section": section_name,
+                    "text": chunk
+                })
 
     
 model = SentenceTransformer("all-MiniLM-L6-v2")
