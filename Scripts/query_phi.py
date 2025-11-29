@@ -6,28 +6,16 @@ import numpy as np
 import re
 import pickle
 from rank_bm25 import BM25Okapi
+from flask import Flask, request, Response, stream_with_context
+from flask_cors import CORS
 
-def stream_query(prompt):
-    url = "http://localhost:11434/api/generate"
+app = Flask(__name__)
+CORS(app)
 
-    payload = {
-        "model": "mistral",
-        "prompt": prompt,
-        "stream": True
-    }
-
-    with requests.post(url, json=payload, stream=True) as response:
-        for line in response.iter_lines():
-            if line:
-                data = json.loads(line.decode("utf-8"))
-                token = data.get("response", "")
-                print(token, end="", flush=True)
-
-    print()
-
-
-if __name__ == "__main__":
-    user_prompt = "I've heard that creatine has some bad side effects. Are there actually any bad side effects? What are they?"
+@app.route("/run_query", methods=["POST"])
+def run_query():
+    data = request.get_json()
+    user_prompt = data["prompt"]
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -87,4 +75,24 @@ if __name__ == "__main__":
             """
     
     #print(prompt)
-    stream_query(prompt)
+    url = "http://localhost:11434/api/generate"
+
+    payload = {
+        "model": "mistral",
+        "prompt": prompt,
+        "stream": True
+    }
+
+    def generate():
+        with requests.post(url, json=payload, stream=True) as response:
+            for line in response.iter_lines():
+                if line:
+                    data = json.loads(line.decode("utf-8"))
+                    token = data.get("response", "")
+                    yield token
+        
+    return Response(stream_with_context(generate()),
+                    mimetype="text/plain")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8181, debug=True)
