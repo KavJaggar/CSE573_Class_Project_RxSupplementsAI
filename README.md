@@ -2,4 +2,4 @@
 # Group 21
 
 
-- Currently works by querying Phi3 through Ollama running locally.
+- Currently works by querying Mistral through Ollama running locally.
