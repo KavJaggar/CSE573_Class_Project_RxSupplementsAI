@@ -23,12 +23,23 @@ for i in range(2, 28):
             chunks = chunk_text(section_text, max_length=150) 
             for idx, chunk in enumerate(chunks):
                 documents.append({
-                    "id": f"{herb}-{section_name}-{idx}",
+                    "id": f"Source: NatMedPro-{herb}-{section_name}-{idx}",
                     "herb": herb,
                     "section": section_name,
                     "text": chunk
                 })
-
+    
+with open(f"../RedditData/reddit_supplements_data.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+for content in data:
+    chunks = chunk_text(content["body"], max_length=150) 
+    for idx, chunk in enumerate(chunks):
+        documents.append({
+            "id": f"Source: Reddit-{content["title"]}-{idx}",
+            "herb": "",
+            "section": "",
+            "text": chunk
+        })
     
 model = SentenceTransformer("all-MiniLM-L6-v2")
 texts = [d["text"] for d in documents]
