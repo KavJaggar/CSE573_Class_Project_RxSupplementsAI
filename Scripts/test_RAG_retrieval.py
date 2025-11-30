@@ -9,8 +9,7 @@ from rank_bm25 import BM25Okapi
 from flask import Flask, request, Response, stream_with_context
 from flask_cors import CORS
 
-def run_query(up):
-    user_prompt = up
+def run_query():
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -19,13 +18,27 @@ def run_query(up):
     
     index = faiss.read_index("../CorpusData/natmed_data.faiss")
 
-    q_emb = model.encode([user_prompt], convert_to_numpy=True)
-    D, I = index.search(q_emb, 3)
-    results = [documents[i] for i in I[0]]
-    context = ""
-    for result in results:
-        context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "                     "
-        print(result["id"], ": ", result["text"])
+    output = []
+
+
+    with open("../Evaluation/evaluationquestions.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            user_prompt = line.strip()
+            print(user_prompt)
+            q_emb = model.encode([user_prompt], convert_to_numpy=True)
+            D, I = index.search(q_emb, 3)
+            results = [documents[i] for i in I[0]]
+            toins = {}
+            toins[user_prompt] = {}
+            for i in range (len(results)):
+                result = results[i]
+                toins[user_prompt][f"result{i}"] = result["id"] + ": " + result["text"]
+            
+            output.append(toins)
+            
+    
+    with open("../Evaluation/RAGVectorRetrievalTest.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=4)
     
     #BM25 RETRIEVAL. DOES NOT WORK VERY WELL. JUST RETURNS NONSENSE IN TESTING SO FAR. BUT MODEL PERFORMS WELL WITH NOT BEING CONFUSED BY NONSENSICAL CONTEXT.
     # def tokenize(text):
@@ -48,4 +61,4 @@ def run_query(up):
     
 
 if __name__ == "__main__":
-    run_query("I've been thinking about trying L-Theanine. What are some positive effects that I can expect?")
+    run_query()
