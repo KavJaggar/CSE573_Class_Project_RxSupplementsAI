@@ -87,7 +87,7 @@ def run_query():
 
                     Write a direct answer to the user and do not provide any information not necessary to answer their question. 
                     Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
-                    If the source is a Reddit post, add an extra disclaimer for the user regarding reliability.
+                    If the source is a Reddit post, add an extra disclaimer for the user regarding reliability. If a user asks a random question not related to supplements, dietary details or health, do not answer.
                     """
             
             #print(prompt)
