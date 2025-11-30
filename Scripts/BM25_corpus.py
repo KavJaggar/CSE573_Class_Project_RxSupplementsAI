@@ -22,7 +22,7 @@ for i in range(2, 28):
             section_text = section_text.strip()
             chunks = chunk_text(section_text, max_length=150) 
             for idx, chunk in enumerate(chunks):
-                documents.append(herb + "-" + section_name + ":" + chunk)
+                documents.append("NatMedPro-" + herb + "-" + section_name + ":" + chunk)
 
 passages = documents
 
