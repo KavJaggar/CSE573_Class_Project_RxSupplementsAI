@@ -85,9 +85,9 @@ def run_query():
                     User question:
                     {user_prompt}
 
-                    Write a direct answer to the user and do not provide any information not necessary to answer their question. 
+                    Write a direct answer to the user and do not provide any information not necessary to answer their question. If some information does not relate to the user question, just ignore it.
                     Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
-                    If the source is a Reddit post, add an extra disclaimer for the user regarding reliability.
+                    DO NOT use any sources of information that are not explicitly provided to you.
                     """
             
             #print(prompt)
