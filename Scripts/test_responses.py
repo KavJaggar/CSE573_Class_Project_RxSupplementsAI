@@ -40,32 +40,32 @@ def run_query():
             print(user_prompt)
 
             # #VECTOR RETRIEVAL
-            # q_emb = model.encode([user_prompt], convert_to_numpy=True)
-            # D, I = index.search(q_emb, 3)
-            # results = [documents[i] for i in I[0]]
+            q_emb = model.encode([user_prompt], convert_to_numpy=True)
+            D, I = index.search(q_emb, 3)
+            results = [documents[i] for i in I[0]]
             context = ""
-            # for result in results:
-            #     context += result["id"] + ": " + result["text"] + "                     "
-            #     #print(result["id"])
+            for result in results:
+                context += result["id"] + ": " + result["text"] + "                     "
+                #print(result["id"])
             
             #BM25 RETRIEVAL.
-            def tokenize(text):
-                return re.findall(r"\w+", text.lower())
+            # def tokenize(text):
+            #     return re.findall(r"\w+", text.lower())
             
-            with open("../CorpusData/bm25_index.pkl", "rb") as f:
-                data = pickle.load(f)
+            # with open("../CorpusData/bm25_index.pkl", "rb") as f:
+            #     data = pickle.load(f)
 
-            passages = data["documents"]
-            bm25 = data["bm25"]
+            # passages = data["documents"]
+            # bm25 = data["bm25"]
 
-            tokenized_query = tokenize(user_prompt)
+            # tokenized_query = tokenize(user_prompt)
 
-            scores = bm25.get_scores(tokenized_query)
-            top_indices = scores.argsort()[::-1][:2]
+            # scores = bm25.get_scores(tokenized_query)
+            # top_indices = scores.argsort()[::-1][:2]
 
-            for idx in top_indices:
-                context += str(passages[idx]) + "                   "
-                #print(passages[idx], scores[idx])
+            # for idx in top_indices:
+            #     context += str(passages[idx]) + "                   "
+            #     #print(passages[idx], scores[idx])
             
             context = re.sub(r'\([\d,\s]+\)', '', context)
 
@@ -104,7 +104,7 @@ def run_query():
             print() #newline
             print() #newline
 
-    with open("../Evaluation/TestResponsesBM25ONLY.json", "w", encoding="utf-8") as f:
+    with open("../Evaluation/TestResponsesVectorONLY.json", "w", encoding="utf-8") as f:
         json.dump(todump, f, ensure_ascii=False, indent=4)
 
 
