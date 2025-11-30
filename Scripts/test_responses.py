@@ -39,14 +39,14 @@ def run_query():
             user_prompt = line.strip()
             print(user_prompt)
 
-            #VECTOR RETRIEVAL
-            q_emb = model.encode([user_prompt], convert_to_numpy=True)
-            D, I = index.search(q_emb, 3)
-            results = [documents[i] for i in I[0]]
+            # #VECTOR RETRIEVAL
+            # q_emb = model.encode([user_prompt], convert_to_numpy=True)
+            # D, I = index.search(q_emb, 3)
+            # results = [documents[i] for i in I[0]]
             context = ""
-            for result in results:
-                context += result["id"] + ": " + result["text"] + "                     "
-                #print(result["id"])
+            # for result in results:
+            #     context += result["id"] + ": " + result["text"] + "                     "
+            #     #print(result["id"])
             
             #BM25 RETRIEVAL.
             def tokenize(text):
@@ -87,7 +87,7 @@ def run_query():
 
                     Write a direct answer to the user and do not provide any information not necessary to answer their question. 
                     Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
-                    If the source is a Reddit post, add an extra disclaimer for the user regarding reliability. If a user asks a random question not related to supplements, dietary details or health, do not answer.
+                    If the source is a Reddit post, add an extra disclaimer for the user regarding reliability.
                     """
             
             #print(prompt)
@@ -104,7 +104,7 @@ def run_query():
             print() #newline
             print() #newline
 
-    with open("../Evaluation/TestResponses.json", "w", encoding="utf-8") as f:
+    with open("../Evaluation/TestResponsesBM25ONLY.json", "w", encoding="utf-8") as f:
         json.dump(todump, f, ensure_ascii=False, indent=4)
 
 
