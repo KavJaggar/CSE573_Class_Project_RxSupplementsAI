@@ -47,14 +47,14 @@ def run_query():
             user_prompt = line.strip()
             print(user_prompt)
 
-            # #VECTOR RETRIEVAL
-            q_emb = model.encode([user_prompt], convert_to_numpy=True)
-            D, I = index.search(q_emb, 3)
-            results = [documents[i] for i in I[0]]
+            # # #VECTOR RETRIEVAL
+            # q_emb = model.encode([user_prompt], convert_to_numpy=True)
+            # D, I = index.search(q_emb, 3)
+            # results = [documents[i] for i in I[0]]
             context = ""
-            for result in results:
-                context += result["id"] + ": " + result["text"] + "                     "
-                #print(result["id"])
+            # for result in results:
+            #     context += result["id"] + ": " + result["text"] + "                     "
+            #     #print(result["id"])
             
             #BM25 RETRIEVAL.
             def tokenize(text):
@@ -77,97 +77,97 @@ def run_query():
             
 
             # KG SECTION
-            # sysprompt = """
-            # You are an AI that will help me extract the word of focus in questions that a user is asking me. They are asking me a question related to a supplement or medication.
-            # I need you to give me the item of focus in their question. 
-            # For Example:
-            # - What are the possible negative effects of creatine? -> creatine
-            # - Is my vitamin a supplement causing my skin to be itchy? -> vitamin a
-            # - Why should I take Vitamin B12 supplements? -> vitamin b12
+            sysprompt = """
+            You are an AI that will help me extract the word of focus in questions that a user is asking me. They are asking me a question related to a supplement or medication.
+            I need you to give me the item of focus in their question. 
+            For Example:
+            - What are the possible negative effects of creatine? -> creatine
+            - Is my vitamin a supplement causing my skin to be itchy? -> vitamin a
+            - Why should I take Vitamin B12 supplements? -> vitamin b12
 
-            # ONLY return the item of focus. Your response must also be in LOWER CASE ONLY.
+            ONLY return the item of focus. Your response must also be in LOWER CASE ONLY.
 
-            # User's Question:
+            User's Question:
 
-            # """
+            """
 
-            # url = "http://10.21.58.251:11434/api/generate"
+            url = "http://10.21.58.251:11434/api/generate"
 
-            # payload = {
-            #     "model": "mistral",
-            #     "prompt": sysprompt + user_prompt,
-            #     "stream": True
-            # }
+            payload = {
+                "model": "mistral",
+                "prompt": sysprompt + user_prompt,
+                "stream": True
+            }
 
-            # focus = ""
-            # with requests.post(url, json=payload, stream=True) as response:
-            #     for line in response.iter_lines():
+            focus = ""
+            with requests.post(url, json=payload, stream=True) as response:
+                for line in response.iter_lines():
                     
-            #         if line:
-            #             data = json.loads(line.decode("utf-8"))
-            #             token = data.get("response", "")
-            #             focus += token
+                    if line:
+                        data = json.loads(line.decode("utf-8"))
+                        token = data.get("response", "")
+                        focus += token
 
-            # print(focus)
+            print(focus)
 
-            # relevant_kg_results = """
-            # Relevant Facts from the NatMedPro Knowledge Graph:
+            relevant_kg_results = """
+            Relevant Facts from the NatMedPro Knowledge Graph:
 
-            # """
-            # try:
+            """
+            try:
                  
-            #     uri = "bolt://localhost:7687"
-            #     user = "neo4j"
-            #     password = "CSE573PASS"
+                uri = "bolt://localhost:7687"
+                user = "neo4j"
+                password = "CSE573PASS"
 
-            #     driver = GraphDatabase.driver(uri, auth=(user, password))
+                driver = GraphDatabase.driver(uri, auth=(user, password))
 
-            #     kg_results = ""
+                kg_results = ""
 
-            #     with driver.session() as session:
-            #         result = session.execute_write(get_relationships, focus.strip().lower())
+                with driver.session() as session:
+                    result = session.execute_write(get_relationships, focus.strip().lower())
 
-            #         for record in result:
-            #             n = record["n"]
-            #             r = record["r"]
-            #             m = record["m"]
+                    for record in result:
+                        n = record["n"]
+                        r = record["r"]
+                        m = record["m"]
 
-            #             kg_results += f"{n['name']} {r.type} {m['name']}    "
+                        kg_results += f"{n['name']} {r.type} {m['name']}    "
 
 
-            #     sysprompt = f"""
-            #     You are an AI that will help me determine the relevant facts to the question a user is asking me. I will give you a list of facts and you will return to me the ones that are VERY DIRECTLY relevant
-            #     to answering the user's question. You can ONLY return up to 3 of the most relevant facts. If the facts are not relevant to answering the question, then do not return them. Do not try to force 
-            #     3 facts, it is ok to return less, or even none. DO NOT return facts that do not directly relate to answering the user's question. 
+                sysprompt = f"""
+                You are an AI that will help me determine the relevant facts to the question a user is asking me. I will give you a list of facts and you will return to me the ones that are VERY DIRECTLY relevant
+                to answering the user's question. You can ONLY return up to 3 of the most relevant facts. If the facts are not relevant to answering the question, then do not return them. Do not try to force 
+                3 facts, it is ok to return less, or even none. DO NOT return facts that do not directly relate to answering the user's question. 
 
-            #     YOU CAN ONLY RETURN UP TO 3 FACTS MAXIMUM. THIS IS A HARD LIMIT THAT CANNOT BE EXCEEDED. 3 FACTS AT MOST.
+                YOU CAN ONLY RETURN UP TO 3 FACTS MAXIMUM. THIS IS A HARD LIMIT THAT CANNOT BE EXCEEDED. 3 FACTS AT MOST.
 
-            #     Facts:
-            #     {kg_results}
+                Facts:
+                {kg_results}
 
-            #     User's Question:
+                User's Question:
 
-            #     """
+                """
 
-            #     url = "http://10.21.58.251:11434/api/generate"
+                url = "http://10.21.58.251:11434/api/generate"
 
-            #     payload = {
-            #         "model": "mistral",
-            #         "prompt": sysprompt + user_prompt,
-            #         "stream": True
-            #     }
+                payload = {
+                    "model": "mistral",
+                    "prompt": sysprompt + user_prompt,
+                    "stream": True
+                }
 
-            #     with requests.post(url, json=payload, stream=True) as response:
-            #         for line in response.iter_lines():
+                with requests.post(url, json=payload, stream=True) as response:
+                    for line in response.iter_lines():
                         
-            #             if line:
-            #                 data = json.loads(line.decode("utf-8"))
-            #                 token = data.get("response", "")
-            #                 relevant_kg_results += token
-            # except:
-            #      pass
+                        if line:
+                            data = json.loads(line.decode("utf-8"))
+                            token = data.get("response", "")
+                            relevant_kg_results += token
+            except:
+                 pass
 
-            # print("KG Res:", relevant_kg_results)
+            print("KG Res:", relevant_kg_results)
 
 
             ### END KG SECTION ###
@@ -210,7 +210,7 @@ def run_query():
             print() #newline
             print() #newline
 
-    with open("../Evaluation/nokgtestqsresponses.json", "w", encoding="utf-8") as f:
+    with open("../Evaluation/kgtestqsresponsesBM25ONLY.json", "w", encoding="utf-8") as f:
         json.dump(todump, f, ensure_ascii=False, indent=4)
 
 
