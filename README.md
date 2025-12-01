@@ -1,8 +1,3 @@
----
-
-```markdown:README.md
-# 🌿 RxSupplementsAI (SupplementRx AI)
-
 **CSE 573 Final Project - Group 21**
 
 An intelligent AI-powered medical assistant that answers questions about supplements, herbal medicines, and natural products using Retrieval-Augmented Generation (RAG) technology.
@@ -304,6 +299,5 @@ This project was developed for CSE 573 at Arizona State University. All rights r
 - Ollama and the open-source LLM community
 - Sentence-Transformers library
 - FAISS by Meta AI
-```
 
 ---
