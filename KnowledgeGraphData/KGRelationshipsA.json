@@ -26,16 +26,196 @@
   },
   {
     "subject": "abscess root",
-    "predicate": "relates to",
-    "object": "safety"
+    "predicate": "has_safety_information",
+    "object": "insufficient"
   },
   {
     "subject": "abscess root",
-    "predicate": "applies to",
+    "predicate": "is_used_during",
     "object": "pregnancy"
   },
   {
     "subject": "abscess root",
+    "predicate": "is_used_during",
+    "object": "lactation"
+  },
+  {
+    "subject": "information about abscess root during pregnancy and lactation",
+    "predicate": "availability",
+    "object": "insufficient_reliable"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "causes",
+    "object": "gastrointestinal upset"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "causes",
+    "object": "sneezing"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "affects",
+    "object": "pulmonary/respiratory"
+  },
+  {
+    "subject": "gastrointestinal",
+    "predicate": "is",
+    "object": "orally affected"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has_insufficient_information",
+    "object": "effectiveness"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "used for",
+    "object": "medicinal tea"
+  },
+  {
+    "subject": "adult",
+    "predicate": "oral dosing",
+    "object": "abscess root"
+  },
+  {
+    "subject": "insufficient",
+    "predicate": "reliable info",
+    "object": "abscess root dosing"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "standardization lacking",
+    "object": "none"
+  },
+  {
+    "subject": "abscess",
+    "predicate": "interacts",
+    "object": "drugs"
+  },
+  {
+    "subject": "abscess",
+    "predicate": "has",
+    "object": "none known"
+  },
+  {
+    "subject": "abscess",
+    "predicate": "has no interaction",
+    "object": "supplements"
+  },
+  {
+    "subject": "abscess",
+    "predicate": "has no known interaction",
+    "object": "conditions"
+  },
+  {
+    "subject": "abscess",
+    "predicate": "has_no_interaction",
+    "object": "lab_tests"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "relates to",
+    "object": "overdose"
+  },
+  {
+    "subject": "overdose with abscess root",
+    "predicate": "has",
+    "object": "insufficient reliable information"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has_insufficient_information",
+    "object": "pharmacokinetics"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "contains",
+    "object": "triterpene saponins"
+  },
+  {
+    "subject": "triterpene saponins",
+    "predicate": "are from",
+    "object": "colloidal solutions in water"
+  },
+  {
+    "subject": "colloidal solutions in water",
+    "predicate": "foam when shaken",
+    "object": null
+  },
+  {
+    "subject": "triterpene saponins",
+    "predicate": "irritate",
+    "object": "mucous membranes"
+  },
+  {
+    "subject": "triterpene saponins",
+    "predicate": "cause",
+    "object": "GI irritation"
+  },
+  {
+    "subject": "(18, 4077)",
+    "predicate": "provide",
+    "object": "reference"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "distributed in",
+    "object": "tropical areas"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "medicine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "traditionally used for",
+    "object": "gastrointestinal disorders"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "traditionally used for",
+    "object": "menstrual disorders"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "diuretic"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "aphrodisiac"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "antiseptic"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "stimulant"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used as",
+    "object": "sedative"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "safety"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "applies to",
+    "object": "pregnancy"
+  },
+  {
+    "subject": "abuta",
     "predicate": "applies to",
     "object": "lactation"
   },
@@ -46,7 +226,537 @@
   },
   {
     "subject": "information",
-    "predicate": "is of type",
+    "predicate": "is of quality",
     "object": "insufficient"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "has_limited_information",
+    "object": "adverse_effects"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "lacks",
+    "object": "thorough_evaluation"
+  },
+  {
+    "subject": "thorough_evaluation",
+    "predicate": "of",
+    "object": "safety_outcomes"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "regarding",
+    "object": "safety_outcomes"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "abdominal pain"
+  },
+  {
+    "subject": "abortion",
+    "predicate": "considered for",
+    "object": "abuta"
+  },
+  {
+    "subject": "asthma",
+    "predicate": "considered for",
+    "object": "abuta"
+  },
+  {
+    "subject": "colic",
+    "predicate": "considered for",
+    "object": "abuta"
+  },
+  {
+    "subject": "contraception",
+    "predicate": "considered for",
+    "object": "abuta"
+  },
+  {
+    "subject": "cough",
+    "predicate": "considered for",
+    "object": "abuta"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "delirium"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "diabetes"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "gonorrhea"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "hypertension"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "joint pain"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates to",
+    "object": "malaria"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "malaria"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "migraine headache"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "pneumonia"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "urinary tract infections (UTIs)"
+  },
+  {
+    "subject": "topical abuta",
+    "predicate": "used for",
+    "object": "wound healing"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "needs more evidence",
+    "object": "rating"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "relates to",
+    "object": "Adult Oral"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "has limited research",
+    "object": "Adult Oral"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "typical dosing unavailable",
+    "object": "Adult Oral"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "relates to",
+    "object": "Topical"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "has limited research",
+    "object": "Topical"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "typical dosing unavailable",
+    "object": "Topical"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "insufficient reliable information available about",
+    "object": "standardization"
+  },
+  {
+    "subject": "Abuta",
+    "predicate": "has no standardization",
+    "object": "formulation"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "interacts with",
+    "object": "diuretic drugs"
+  },
+  {
+    "subject": "interaction rating",
+    "predicate": "is",
+    "object": "moderate"
+  },
+  {
+    "subject": "severity",
+    "predicate": "of",
+    "object": "combination"
+  },
+  {
+    "subject": "severity",
+    "predicate": "is",
+    "object": "high"
+  },
+  {
+    "subject": "occurrence",
+    "predicate": "of",
+    "object": "possible side effects"
+  },
+  {
+    "subject": "level of evidence",
+    "predicate": "is",
+    "object": "d (in vitro or animal study)"
+  },
+  {
+    "subject": "effects",
+    "predicate": "of",
+    "object": "abuta"
+  },
+  {
+    "subject": "diuretic effects",
+    "predicate": "include",
+    "object": "potassium excretion"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "causes interaction with",
+    "object": "horsetail"
+  },
+  {
+    "subject": "horsetail",
+    "predicate": "has effect of",
+    "object": "diuretic"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "causes effect of",
+    "object": "diuretic"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "causes excretion of",
+    "object": "potassium"
+  },
+  {
+    "subject": "licorice",
+    "predicate": "has effect of",
+    "object": "diuretic"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "causes interaction with",
+    "object": "licorice"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "has_no_known",
+    "object": "interactions_with_conditions"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "has",
+    "object": "interactions_with_lab_tests"
+  },
+  {
+    "subject": "interactions_with_lab_tests",
+    "predicate": "is",
+    "object": "none_known"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "relates_to",
+    "object": "overdose"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "has_insufficient",
+    "object": "reliable_information"
+  },
+  {
+    "subject": "overdose",
+    "predicate": "with",
+    "object": "abuta"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "has_pharmacokinetics",
+    "object": "unknown"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "terpenoids"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "flavonoids"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "hayatinin"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "hayatin"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "cissamine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "cissampareine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "pareirubrines A"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "pareirubrines B"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "pelosine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "bebeerine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "contains",
+    "object": "tetrandrine"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "isolated from",
+    "object": "root"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "isolated from",
+    "object": "above ground parts"
+  },
+  {
+    "subject": "abuta root",
+    "predicate": "contains",
+    "object": "cissampeloflavone"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "pain"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "reduced",
+    "object": "pain and inflammation"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "cancer"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "protected against",
+    "object": "development of cancer"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "possible mechanism of action might be related to",
+    "object": "antioxidant effects"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "diarrhea"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "shown to reduce",
+    "object": "intestinal fluid"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "birth control"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "prolongs",
+    "object": "estrous cycle"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "had anti-ulcer effects",
+    "object": "none"
+  },
+  {
+    "subject": "quercetin",
+    "predicate": "had anti-ulcer effects",
+    "object": "none"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "anti-urolithic effects"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "increases",
+    "object": "urinary output"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "reduces",
+    "object": "calcium and uric acid levels"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "treatment of snake bites"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "neutralizes",
+    "object": "snake venom"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "malaria"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "shows anti-plasmodial effects",
+    "object": "none"
+  },
+  {
+    "subject": "cissampeloflavone",
+    "predicate": "has antiprotozoal effects",
+    "object": "none"
+  },
+  {
+    "subject": "abuta",
+    "predicate": "used for",
+    "object": "heart problems"
+  },
+  {
+    "subject": "abuta extract",
+    "predicate": "has",
+    "object": "cardioprotective effects"
+  },
+  {
+    "subject": "animal model",
+    "predicate": "shows",
+    "object": "improvement of anxiety and depression"
+  },
+  {
+    "subject": "abuta leaf extract",
+    "predicate": "has",
+    "object": "muscle relaxant effects"
+  },
+  {
+    "subject": "hayatinin and hayatin alkaloids",
+    "predicate": "have",
+    "object": "neuromuscular blocking and muscle relaxant effects"
+  },
+  {
+    "subject": "animal model",
+    "predicate": "shows",
+    "object": "increase of muscle relaxation"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "grows in",
+    "object": "southwest and west texas, as well as in the northern states of mexico"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "found in",
+    "object": "certain weight-loss and athletic performance supplements"
+  },
+  {
+    "subject": "extracts of acacia rigidula",
+    "predicate": "isolated",
+    "object": "a variety of biogenic amines and alkaloids"
+  },
+  {
+    "subject": "some of these amines",
+    "predicate": "believed to have",
+    "object": "stimulant effects"
+  },
+  {
+    "subject": "patients taking supplements containing acacia rigidula",
+    "predicate": "reported",
+    "object": "tachycardia and palpitations"
+  },
+  {
+    "subject": "one report of cardiac arrest in patients taking supplements containing acacia rigidula",
+    "predicate": "exists",
+    "object": null
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "phenethylamine"
+  },
+  {
+    "subject": "supplements containing acacia rigidula",
+    "predicate": "includes",
+    "object": "beta-methylphenethylamine"
+  },
+  {
+    "subject": "beta-methylphenethylamine",
+    "predicate": "similar to",
+    "object": "amphetamine"
+  },
+  {
+    "subject": "fda",
+    "predicate": "states",
+    "object": "bmpea does not meet definition of dietary ingredient"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "is possibly unsafe",
+    "object": "orally"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has not been studied",
+    "object": "in clinical trials"
+  },
+  {
+    "subject": "patients",
+    "predicate": "experienced",
+    "object": "tachycardia and palpitations"
+  },
+  {
+    "subject": "one report",
+    "predicate": "of cardiac arrest",
+    "object": "in patients"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "stimulant ingredients"
+  },
+  {
+    "subject": "pregnancy and lactation",
+    "predicate": "insufficient reliable information is available",
+    "object": "avoid using"
   }
 ]
