@@ -15,8 +15,7 @@ RxSupplementsAI is a RAG-based question-answering system designed to provide acc
 - 🔍 **Hybrid Retrieval System** - Vector similarity search (FAISS) with BM25 fallback
 - 🧠 **LLM-Powered Responses** - Mistral model via Ollama for natural language generation
 - 📚 **Large Knowledge Base** - 30,566+ documents from authoritative sources
-- 💬 **Interactive Chat Interface** - Modern React-based web application with session management
-- 🔗 **Knowledge Graph Generation** - Automatic extraction of Subject-Predicate-Object relationships
+- 💬 **Interactive Chat Interface** - Modern React-based web application
 - 📊 **Source Citations** - All answers include citations to original sources
 
 ---
@@ -26,12 +25,12 @@ RxSupplementsAI is a RAG-based question-answering system designed to provide acc
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                         React Frontend                               │
-│                    (Chat Interface - Port 5173)                      │
+│                    (Chat Interface)                                  │
 └───────────────────────────────┬─────────────────────────────────────┘
                                 │ HTTP/REST
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                      Flask Backend (Port 8181)                       │
+│                      Flask Backend                                   │
 │                                                                      │
 │  ┌────────────────┐    ┌─────────────────┐    ┌──────────────────┐  │
 │  │ Query Handler  │───▶│ Retrieval Engine│───▶│ Response Builder │  │
@@ -48,7 +47,7 @@ RxSupplementsAI is a RAG-based question-answering system designed to provide acc
             ▼                                             ▼
 ┌─────────────────────┐                    ┌────────────────────────┐
 │  Corpus Data        │                    │  Ollama (Mistral LLM)  │
-│  • FAISS Index      │                    │  (Port 11434)          │
+│  • FAISS Index      │                    │                        │
 │  • Document Store   │                    └────────────────────────┘
 │  • BM25 Index       │
 └─────────────────────┘
@@ -113,7 +112,6 @@ CSE573_Class_Project_RxSupplementsAI/
 |------------|---------|
 | **Python 3.8+** | Core backend language |
 | **Flask** | REST API server |
-| **Flask-CORS** | Cross-origin request handling |
 | **Sentence-Transformers** | Text embeddings (`all-MiniLM-L6-v2`) |
 | **FAISS** | Vector similarity search |
 | **rank-bm25** | BM25 keyword retrieval |
@@ -218,8 +216,8 @@ npm run dev
 
 | Source | Description | Documents |
 |--------|-------------|-----------|
-| **Natural Medicines Database** | Professional monographs on supplements, herbs, and natural products | ~28,000+ |
-| **Reddit r/supplements** | Community discussions and experiences | ~2,500+ |
+| **Natural Medicines NatMedPro Database** | Professional monographs on supplements, herbs, and natural products |
+| **Reddit r/supplements** | Community discussions and experiences |
 | **Total Corpus** | Combined indexed documents | **30,566** |
 
 ---
@@ -232,7 +230,7 @@ The system was evaluated using 50 curated test questions covering:
 - Drug interactions
 - Dosage recommendations
 - Special populations (pregnancy, children)
-- Off-topic queries (to test refusal)
+- Off-topic queries (to test refusal to answer)
 
 ### Retrieval Comparison
 
@@ -299,5 +297,6 @@ This project was developed for CSE 573 at Arizona State University. All rights r
 - Ollama and the open-source LLM community
 - Sentence-Transformers library
 - FAISS by Meta AI
+- Robert McDermott's KG Relationships Generation Tool: https://github.com/robert-mcdermott/ai-knowledge-graph
 
 ---
