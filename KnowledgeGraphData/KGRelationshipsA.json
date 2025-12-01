@@ -758,5 +758,3113 @@
     "subject": "pregnancy and lactation",
     "predicate": "insufficient reliable information is available",
     "object": "avoid using"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has limited info on",
+    "object": "adverse effects"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "affects",
+    "object": "cardiovascular"
+  },
+  {
+    "subject": "patients",
+    "predicate": "experienced",
+    "object": "tachycardia"
+  },
+  {
+    "subject": "patients",
+    "predicate": "experienced",
+    "object": "palpitations"
+  },
+  {
+    "subject": "one patient",
+    "predicate": "had",
+    "object": "cardiac arrest"
+  },
+  {
+    "subject": "supplements",
+    "predicate": "contain",
+    "object": "stimulant ingredients"
+  },
+  {
+    "subject": "unclear",
+    "predicate": "if",
+    "object": "adverse effects caused by",
+    "object2": "acacia rigidula"
+  },
+  {
+    "subject": "unclear",
+    "predicate": "if",
+    "object": "adverse effects caused by",
+    "object2": "stimulant ingredients"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "effectiveness",
+    "object": "athletic performance"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has interest",
+    "object": "athletic performance"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "insufficient reliable evidence",
+    "object": "rate athletic performance"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "effectiveness",
+    "object": "obesity"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has interest",
+    "object": "obesity"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "insufficient reliable evidence",
+    "object": "rate obesity"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "dosing",
+    "object": "adult oral"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "typical dosing",
+    "object": "unavailable"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "dosing",
+    "object": "children oral"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "typical dosing",
+    "object": "unavailable"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "standardization",
+    "object": "unavailable"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "formulation",
+    "object": "insufficient"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "interacts with",
+    "object": "drugs"
+  },
+  {
+    "subject": "cyp2d6 substrates",
+    "predicate": "are substrates of",
+    "object": "cyp2d6"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "increases levels of",
+    "object": "cyp2d6 substrates"
+  },
+  {
+    "subject": "in vitro research",
+    "predicate": "shows",
+    "object": "bmpea strongly inhibits cyp2d6 enzyme"
+  },
+  {
+    "subject": "cyp3a4 substrates",
+    "predicate": "are substrates of",
+    "object": "cyp3a4"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "increases levels of",
+    "object": "cyp3a4 substrates"
+  },
+  {
+    "subject": "in vitro research",
+    "predicate": "shows",
+    "object": "bmpea inhibits cyp3a4 enzyme by 37%"
+  },
+  {
+    "subject": "stimulant drugs",
+    "predicate": "interact with",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "interacts with",
+    "object": "stimulant drugs"
+  },
+  {
+    "subject": "taking",
+    "predicate": "might increase",
+    "object": "risk of adverse cardiovascular effects"
+  },
+  {
+    "subject": "constituents and adulterants",
+    "predicate": "have",
+    "object": "stimulant effects"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "interacts",
+    "object": "supplements"
+  },
+  {
+    "subject": "supplements",
+    "predicate": "have",
+    "object": "stimulant properties"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "might increase",
+    "object": "adverse cardiovascular effects"
+  },
+  {
+    "subject": "constituents",
+    "predicate": "found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "constituents",
+    "predicate": "have",
+    "object": "stimulant effects"
+  },
+  {
+    "subject": "adulterants",
+    "predicate": "found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "products",
+    "predicate": "see",
+    "object": "energy boosting stimulant activity here"
+  },
+  {
+    "subject": "products",
+    "predicate": "see",
+    "object": "cognitive stimulant activity here"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "interacts with",
+    "object": "high blood pressure"
+  },
+  {
+    "subject": "acacia rigidula constituents",
+    "predicate": "have",
+    "object": "stimulant effects"
+  },
+  {
+    "subject": "acacia rigidula adulterants",
+    "predicate": "have",
+    "object": "stimulant effects"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "affects",
+    "object": "blood pressure"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "influences",
+    "object": "heart rate"
+  },
+  {
+    "subject": "acacia rigidula supplements",
+    "predicate": "may interfere with",
+    "object": "surgical procedures"
+  },
+  {
+    "subject": "patients",
+    "predicate": "should discontinue",
+    "object": "acacia rigidula supplements"
+  },
+  {
+    "subject": "patients",
+    "predicate": "should cease using",
+    "object": "acacia rigidula supplements"
+  },
+  {
+    "subject": "patients",
+    "predicate": "should stop taking",
+    "object": "acacia rigidula supplements"
+  },
+  {
+    "subject": "patients",
+    "predicate": "need to discontinue",
+    "object": "acacia rigidula supplements"
+  },
+  {
+    "subject": "patients",
+    "predicate": "should discontinue at least",
+    "object": "2 weeks before elective surgical procedures"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has",
+    "object": "none known interactions"
+  },
+  {
+    "subject": "none known",
+    "predicate": "with",
+    "object": "lab tests"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "relates to",
+    "object": "overdose"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has",
+    "object": "insufficient reliable information available about presentation"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has",
+    "object": "insufficient reliable information available about treatment"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "has",
+    "object": "insufficient reliable information"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "relates to",
+    "object": "pharmacokinetics"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "alkaloids"
+  },
+  {
+    "subject": "nalkaloids",
+    "predicate": "includes",
+    "object": "n-methyl-phenethylamine"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "pipecolamide"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "phenethylamine"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "contains",
+    "object": "tyramine"
+  },
+  {
+    "subject": "4-methyl-2-pyridinamide",
+    "predicate": "is found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "n,n-dimethyltryptamine",
+    "predicate": "is found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "n-methyltyramine",
+    "predicate": "is found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "amphetamine",
+    "predicate": "is found in",
+    "object": "acacia rigidula"
+  },
+  {
+    "subject": "methodology",
+    "predicate": "questions",
+    "object": "accuracy"
+  },
+  {
+    "subject": "tyramine",
+    "predicate": "represents",
+    "object": "major amines in acacia rigidula (spring)"
+  },
+  {
+    "subject": "acacia rigidula leaves",
+    "predicate": "contains",
+    "object": "most abundant amine (tryptamine)"
+  },
+  {
+    "subject": "acacia rigidula twigs",
+    "predicate": "contains",
+    "object": "most abundant amine (tryptamine)"
+  },
+  {
+    "subject": "acacia rigidula leaves",
+    "predicate": "also contains",
+    "object": "phenethylamine"
+  },
+  {
+    "subject": "acacia rigidula plant parts",
+    "predicate": "identified",
+    "object": "phenethylamine"
+  },
+  {
+    "subject": "previous research",
+    "predicate": "identified",
+    "object": "n-methyl-phenethylamine as major amine in acacia rigidula"
+  },
+  {
+    "subject": "this study",
+    "predicate": "found",
+    "object": "trace amounts of n-methyl-phenethylamine"
+  },
+  {
+    "subject": "presence",
+    "predicate": "not detected",
+    "object": "amphetamine"
+  },
+  {
+    "subject": "researchers",
+    "predicate": "isolated and quantified",
+    "object": "amines present in acacia rigidula dietary supplements"
+  },
+  {
+    "subject": "amount of phenethylamine isolated from acacia rigidula supplements",
+    "predicate": "greater than expected",
+    "object": "from plant parts alone"
+  },
+  {
+    "subject": "almost half of the acacia rigidula supplements tested",
+    "predicate": "contains",
+    "object": "beta-methylphenethylamine (bmpea)"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "synthetic compound",
+    "object": "not isolated from acacia rigidula"
+  },
+  {
+    "subject": "additional research",
+    "predicate": "confirms",
+    "object": "many supplements listing acacia rigidula as ingredient actually contain bmpea"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "shown to cross",
+    "object": "blood brain barrier"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "increase",
+    "object": "blood pressure"
+  },
+  {
+    "subject": "acacia rigidula",
+    "predicate": "increase",
+    "object": "heart rate"
+  },
+  {
+    "subject": "rats",
+    "predicate": "experienced",
+    "object": "blood brain barrier crossing"
+  },
+  {
+    "subject": "cats",
+    "predicate": "experienced",
+    "object": "increased blood pressure"
+  },
+  {
+    "subject": "dogs",
+    "predicate": "experienced",
+    "object": "increased heart rate"
+  },
+  {
+    "subject": "many supplements",
+    "predicate": "contain",
+    "object": "beta-methylphenethylamine"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "isomer of",
+    "object": "stimulant amphetamine"
+  },
+  {
+    "subject": "animal research",
+    "predicate": "suggests",
+    "object": "increased blood pressure and heart rate"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "can increase",
+    "object": "blood pressure"
+  },
+  {
+    "subject": "bmpea",
+    "predicate": "can increase",
+    "object": "heart rate"
+  },
+  {
+    "subject": "acai",
+    "predicate": "distributed",
+    "object": "northern area of South America"
+  },
+  {
+    "subject": "acai",
+    "predicate": "grows in",
+    "object": "Brazilian Amazon region"
+  },
+  {
+    "subject": "acai fruit",
+    "predicate": "shape",
+    "object": "round"
+  },
+  {
+    "subject": "acai fruit",
+    "predicate": "color",
+    "object": "dark purple"
+  },
+  {
+    "subject": "acai fruit",
+    "predicate": "edible",
+    "object": "true"
+  },
+  {
+    "subject": "acai",
+    "predicate": "used orally",
+    "object": "safely"
+  },
+  {
+    "subject": "acai",
+    "predicate": "appropriate dosage",
+    "object": "162.5 grams daily"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "used clinically",
+    "object": "up to 3 months"
+  },
+  {
+    "subject": "acai",
+    "predicate": "insufficient info topically",
+    "object": "safety"
+  },
+  {
+    "subject": "pregnancy",
+    "predicate": "insufficient reliable info available",
+    "object": "using acai"
+  },
+  {
+    "subject": "lactation",
+    "predicate": "insufficient reliable info available",
+    "object": "using acai"
+  },
+  {
+    "subject": "acai",
+    "predicate": "seems_to_be",
+    "object": "well_tolerated"
+  },
+  {
+    "subject": "raw_acai_fruit_and_juice",
+    "predicate": "can_be_contaminated_with",
+    "object": "parasitic_protozoan"
+  },
+  {
+    "subject": "parasitic_protozoan",
+    "predicate": "called",
+    "object": "trypanosoma_cruzi"
+  },
+  {
+    "subject": "trypanosoma_cruzi",
+    "predicate": "causes",
+    "object": "american_trypanosomiasis_or_chagas_disease"
+  },
+  {
+    "subject": "brazilian_outbreak",
+    "predicate": "of",
+    "object": "chagas_disease"
+  },
+  {
+    "subject": "brazilian_outbreak",
+    "predicate": "was_linked_to",
+    "object": "consumption_of_acai_juice"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "aging skin"
+  },
+  {
+    "subject": "insufficient reliable information",
+    "predicate": "exists about",
+    "object": "clinical effects of acai for aging skin"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "athletic performance"
+  },
+  {
+    "subject": "oral acai",
+    "predicate": "is unclear if",
+    "object": "beneficial for improving athletic performance"
+  },
+  {
+    "subject": "preliminary clinical research",
+    "predicate": "shows that consuming",
+    "object": "400 grams of pasteurized acai pulp daily decreases levels of blood lactate during exercise by 28%"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "prevents oxidative damage",
+    "object": "during exercise"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "seems to increase anaerobic threshold intensity",
+    "object": null
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "does not improve maximum workload or measures of exertion",
+    "object": "when compared to baseline"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "erectile dysfunction (ED)"
+  },
+  {
+    "subject": "insufficient reliable information",
+    "predicate": "exists about",
+    "object": "clinical effects of acai for ED"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "hypercholesterolemia"
+  },
+  {
+    "subject": "acai",
+    "predicate": "for",
+    "object": "hypercholesterolemia"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "metabolic syndrome"
+  },
+  {
+    "subject": "interest",
+    "predicate": "in",
+    "object": "using oral acai for metabolic syndrome"
+  },
+  {
+    "subject": "oral black seed",
+    "predicate": "beneficial for",
+    "object": "improving metabolic indices in overweight individuals"
+  },
+  {
+    "subject": "overweight individuals",
+    "predicate": "consuming",
+    "object": "acai pulp reduces fasting glucose and total cholesterol levels"
+  },
+  {
+    "subject": "consuming acai pulp",
+    "predicate": "no effect on",
+    "object": "LDL cholesterol, triglycerides, HDL cholesterol, or blood pressure"
+  },
+  {
+    "subject": "findings",
+    "predicate": "limited by",
+    "object": "lack of a comparator group"
+  },
+  {
+    "subject": "acai",
+    "predicate": "for",
+    "object": "osteoarthritis"
+  },
+  {
+    "subject": "interest",
+    "predicate": "in",
+    "object": "using oral acai for osteoarthritis"
+  },
+  {
+    "subject": "acai",
+    "predicate": "relates to",
+    "object": "tinnitus"
+  },
+  {
+    "subject": "acai",
+    "predicate": "shows effectiveness for",
+    "object": "chronic tinnitus"
+  },
+  {
+    "subject": "dried acai pulp extract",
+    "predicate": "taken daily",
+    "object": "100 mg"
+  },
+  {
+    "subject": "dried acai pulp extract",
+    "predicate": "for",
+    "object": "3 months"
+  },
+  {
+    "subject": "acai",
+    "predicate": "decreases",
+    "object": "tinnitus discomfort"
+  },
+  {
+    "subject": "placebo group",
+    "predicate": "reports similar improvement",
+    "object": "in tinnitus discomfort"
+  },
+  {
+    "subject": "more evidence",
+    "predicate": "is needed",
+    "object": "to rate acai"
+  },
+  {
+    "subject": "acai",
+    "predicate": "rates for",
+    "object": "these uses"
+  },
+  {
+    "subject": "acai-dosing",
+    "predicate": "related to",
+    "object": "adult oral"
+  },
+  {
+    "subject": "research",
+    "predicate": "limited",
+    "object": "typical dosing"
+  },
+  {
+    "subject": "acai formulations",
+    "predicate": "used in",
+    "object": "clinical research"
+  },
+  {
+    "subject": "acai formulations",
+    "predicate": "used in",
+    "object": "laboratory studies"
+  },
+  {
+    "subject": "bottled beverages",
+    "predicate": "one of",
+    "object": "acai formulations"
+  },
+  {
+    "subject": "concentrated juices",
+    "predicate": "one of",
+    "object": "acai formulations"
+  },
+  {
+    "subject": "frozen fruit pulp",
+    "predicate": "one of",
+    "object": "acai formulations"
+  },
+  {
+    "subject": "lyophilized pulps and oils",
+    "predicate": "one of",
+    "object": "acai formulations"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "obtained by",
+    "object": "immersing fruit in water"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "classified according to",
+    "object": "amount of water present"
+  },
+  {
+    "subject": "thick acai",
+    "predicate": "contains",
+    "object": "more than 14% solids"
+  },
+  {
+    "subject": "special acai",
+    "predicate": "contains",
+    "object": "more than 14% solids"
+  },
+  {
+    "subject": "regular acai",
+    "predicate": "contains",
+    "object": "11% to 14% solids"
+  },
+  {
+    "subject": "thin acai",
+    "predicate": "contains",
+    "object": "8% to 11% solids"
+  },
+  {
+    "subject": "popular acai",
+    "predicate": "contains",
+    "object": "8% to 11% solids"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "obtained if",
+    "object": "little or no water is used during extraction"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "contains",
+    "object": "about 40% solids"
+  },
+  {
+    "subject": "some acai products",
+    "predicate": "standardized based on",
+    "object": "total anthocyanin or phenolic contents"
+  },
+  {
+    "subject": "many acai products",
+    "predicate": "not standardized based on",
+    "object": "total anthocyanin or phenolic contents"
+  },
+  {
+    "subject": "laboratory research",
+    "predicate": "shows",
+    "object": "anthocyanin, flavonoid, and phenolic acid contents vary significantly across different acai products"
+  },
+  {
+    "subject": "sambazon acai smoothie pack",
+    "predicate": "is produced by",
+    "object": "sambazon inc."
+  },
+  {
+    "subject": "sambazon acai smoothie pack",
+    "predicate": "contains",
+    "object": "14 percent dry acai solids"
+  },
+  {
+    "subject": "100 grams of pulp",
+    "predicate": "contains",
+    "object": "6.42 grams of fatty acids"
+  },
+  {
+    "subject": "6.42 grams of fatty acids",
+    "predicate": "includes",
+    "object": "octadecanoic acid"
+  },
+  {
+    "subject": "6.42 grams of fatty acids",
+    "predicate": "includes",
+    "object": "hexadecanoic acid"
+  },
+  {
+    "subject": "6.42 grams of fatty acids",
+    "predicate": "includes",
+    "object": "octadecadienoic acid"
+  },
+  {
+    "subject": "100 grams of pulp",
+    "predicate": "contains",
+    "object": "3.5 mg/mL total phenolics (gallic acid)"
+  },
+  {
+    "subject": "100 grams of pulp",
+    "predicate": "contains",
+    "object": "0.77 mg/mL total anthocyanins (cyanidin 3-glucoside)"
+  },
+  {
+    "subject": "acai",
+    "predicate": "interacts with",
+    "object": "antidiabetes drugs"
+  },
+  {
+    "subject": "interaction rating",
+    "predicate": "is",
+    "object": "moderate"
+  },
+  {
+    "subject": "severity",
+    "predicate": "is",
+    "object": "moderate"
+  },
+  {
+    "subject": "occurrence",
+    "predicate": "is",
+    "object": "possible"
+  },
+  {
+    "subject": "level of evidence",
+    "predicate": "is",
+    "object": "d"
+  },
+  {
+    "subject": "acai",
+    "predicate": "may affect",
+    "object": "glycemic control"
+  },
+  {
+    "subject": "taking acai",
+    "predicate": "might",
+    "object": "increase or decrease levels of fasting blood glucose"
+  },
+  {
+    "subject": "acai",
+    "predicate": "might have",
+    "object": "hypoglycemic effects"
+  },
+  {
+    "subject": "acai",
+    "predicate": "may",
+    "object": "increase or decrease levels of fasting blood glucose"
+  },
+  {
+    "subject": "acai",
+    "predicate": "might have",
+    "object": "additive effects with herbs that decrease blood glucose levels"
+  },
+  {
+    "subject": "acai",
+    "predicate": "might increase",
+    "object": "fasting blood glucose levels"
+  },
+  {
+    "subject": "acai",
+    "predicate": "shown to modestly increase",
+    "object": "fasting blood glucose"
+  },
+  {
+    "subject": "healthy adults",
+    "predicate": "consume",
+    "object": "frozen acai pulp"
+  },
+  {
+    "subject": "frozen acai pulp",
+    "predicate": "modestly reduces",
+    "object": "fasting blood glucose"
+  },
+  {
+    "subject": "patients with diabetes",
+    "predicate": "research is conflicting",
+    "object": "acai"
+  },
+  {
+    "subject": "acai",
+    "predicate": "interacts with",
+    "object": "lab tests"
+  },
+  {
+    "subject": "acai",
+    "predicate": "affects",
+    "object": "mri signal (t1-weighted)"
+  },
+  {
+    "subject": "acai",
+    "predicate": "decreases",
+    "object": "mri signal (t2-weighted)"
+  },
+  {
+    "subject": "acai fruit consumption",
+    "predicate": "impacts",
+    "object": "imaging studies"
+  },
+  {
+    "subject": "imaging studies",
+    "predicate": "of",
+    "object": "gastrointestinal tract"
+  },
+  {
+    "subject": "acai-overdose",
+    "predicate": "relates to",
+    "object": "presentation"
+  },
+  {
+    "subject": "acai-overdose",
+    "predicate": "relates to",
+    "object": "treatment"
+  },
+  {
+    "subject": "insufficient",
+    "predicate": "relates to",
+    "object": "reliable information"
+  },
+  {
+    "subject": "reliable information",
+    "predicate": "about",
+    "object": "overdose with acai"
+  },
+  {
+    "subject": "acai anthocyanins",
+    "predicate": "negatively correlates",
+    "object": "dose volume"
+  },
+  {
+    "subject": "bioavailability",
+    "predicate": "of",
+    "object": "acai anthocyanins"
+  },
+  {
+    "subject": "lower bioavailability",
+    "predicate": "observed",
+    "object": "at higher dose volumes"
+  },
+  {
+    "subject": "maximum serum concentrations",
+    "predicate": "of",
+    "object": "total anthocyanins from acai pulp"
+  },
+  {
+    "subject": "time",
+    "predicate": "after ingestion",
+    "object": "2.2 hours"
+  },
+  {
+    "subject": "maximum serum concentrations",
+    "predicate": "of",
+    "object": "total anthocyanins from clarified acai juice"
+  },
+  {
+    "subject": "time",
+    "predicate": "after ingestion",
+    "object": "2 hours"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "anthocyanins"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "proanthocyanidins"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "flavonoids"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "phenolic acids"
+  },
+  {
+    "subject": "ripe acai",
+    "predicate": "has color",
+    "object": "purple"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "oleic acid"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "saturated fatty acid"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "palmitic acid"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "polyunsaturated fatty acid"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "linoleic acid"
+  },
+  {
+    "subject": "acai",
+    "predicate": "shows",
+    "object": "anti-inflammatory effects"
+  },
+  {
+    "subject": "acai",
+    "predicate": "is_therapeutic_for",
+    "object": "pro-inflammatory disease states"
+  },
+  {
+    "subject": "OptiAcai",
+    "predicate": "inhibits",
+    "object": "cyclooxygenase-1"
+  },
+  {
+    "subject": "OptiAcai",
+    "predicate": "inhibits",
+    "object": "COX-2"
+  },
+  {
+    "subject": "acai",
+    "predicate": "suppresses",
+    "object": "VCAM-1 expression"
+  },
+  {
+    "subject": "VCAM-1 expression",
+    "predicate": "associated_with",
+    "object": "early stages of atherosclerosis"
+  },
+  {
+    "subject": "acai supplement preparations",
+    "predicate": "have",
+    "object": "notable anti-inflammatory effects"
+  },
+  {
+    "subject": "beverage containing acai pulp",
+    "predicate": "does_not_affect",
+    "object": "hsCRP"
+  },
+  {
+    "subject": "acai",
+    "predicate": "compared with",
+    "object": "placebo"
+  },
+  {
+    "subject": "acai",
+    "predicate": "did not affect",
+    "object": "tumor necrosis factor"
+  },
+  {
+    "subject": "acai",
+    "predicate": "did not affect",
+    "object": "interleukin-6"
+  },
+  {
+    "subject": "acai",
+    "predicate": "decreased",
+    "object": "interferon-gamma"
+  },
+  {
+    "subject": "acai fruit pulp",
+    "predicate": "reduced levels of",
+    "object": "P-selectin"
+  },
+  {
+    "subject": "fractions of frozen acai pulp",
+    "predicate": "suppress the proliferation of",
+    "object": "human promyelocytic leukemia cells"
+  },
+  {
+    "subject": "diet containing 5% acai",
+    "predicate": "reduced the development of",
+    "object": "esophageal tumors"
+  },
+  {
+    "subject": "ellagitannins in berries",
+    "predicate": "attributed to",
+    "object": "chemopreventive effects"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "may reduce blood glucose levels in",
+    "object": "obese mice"
+  },
+  {
+    "subject": "frozen acai pulp",
+    "predicate": "reduces fasting glucose by",
+    "object": "one month"
+  },
+  {
+    "subject": "acai",
+    "predicate": "has_effect",
+    "object": "hypoglycemic"
+  },
+  {
+    "subject": "acai",
+    "predicate": "contains",
+    "object": "anthocyanin_compounds"
+  },
+  {
+    "subject": "anthocyanins_in_acai",
+    "predicate": "are",
+    "object": "antioxidants"
+  },
+  {
+    "subject": "acai_fruit_pulp",
+    "predicate": "has",
+    "object": "high_antioxidant_capacity"
+  },
+  {
+    "subject": "acai_fruit_pulp",
+    "predicate": "compared_to",
+    "object": "cranberry_raspberry_blackberry_strawberry_blueberry"
+  },
+  {
+    "subject": "specific_freeze_dried_acai_fruit_pulp_and_skin_powder",
+    "predicate": "has",
+    "object": "high_in_vitro_antioxidant_activity"
+  },
+  {
+    "subject": "specific_freeze_dried_acai_fruit_pulp_and_skin_powder",
+    "predicate": "has",
+    "object": "higher_than_other_fruits_on_superoxide_peroxyl_radicals"
+  },
+  {
+    "subject": "specific_freeze_dried_acai_fruit_pulp_and_skin_powder",
+    "predicate": "has",
+    "object": "mild_antioxidant_activity_against_peroxynitrite_hydroxyl_radicals"
+  },
+  {
+    "subject": "acai_juice_or_pulp",
+    "predicate": "increases",
+    "object": "plasma_antioxidant_capacity"
+  },
+  {
+    "subject": "acai_juice_or_pulp",
+    "predicate": "does_not_reduce",
+    "object": "generation_of_reactive_oxygen_species"
+  },
+  {
+    "subject": "lipid_peroxidation",
+    "predicate": "associated_with",
+    "object": "cardiovascular_disease_neurodegenerative_diseases"
+  },
+  {
+    "subject": "acai pulp",
+    "predicate": "contains",
+    "object": "fruits and berries"
+  },
+  {
+    "subject": "monavie active",
+    "predicate": "contains",
+    "object": "acai pulp"
+  },
+  {
+    "subject": "monavie",
+    "predicate": "manufactures",
+    "object": "monavie active"
+  },
+  {
+    "subject": "chronic tinnitus adults",
+    "predicate": "affected by",
+    "object": "dried acai pulp extract"
+  },
+  {
+    "subject": "dried acai pulp extract",
+    "predicate": "does not affect",
+    "object": "lipid peroxidation"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "evaluated for",
+    "object": "antioxidant effects"
+  },
+  {
+    "subject": "obese mice",
+    "predicate": "fed",
+    "object": "high-fat diet"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "reduces",
+    "object": "oxidative damage"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "decreases",
+    "object": "oxidative stress markers"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "increases",
+    "object": "antioxidant levels"
+  },
+  {
+    "subject": "obese mice",
+    "predicate": "suffers from",
+    "object": "hyperlipidemia"
+  },
+  {
+    "subject": "acai seed extract",
+    "predicate": "reduces",
+    "object": "body mass"
+  },
+  {
+    "subject": "acai seed extract consumption",
+    "predicate": "affects",
+    "object": "cardiovascular remodeling"
+  },
+  {
+    "subject": "rosuvastatin",
+    "predicate": "has similar effects as",
+    "object": "acai seed extract consumption"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "demonstrates",
+    "object": "modest beneficial effect on high-density"
+  },
+  {
+    "subject": "acai",
+    "predicate": "affects",
+    "object": "lipoprotein hdl cholesterol levels"
+  },
+  {
+    "subject": "acai",
+    "predicate": "does not affect",
+    "object": "low-density lipoprotein cholesterol"
+  },
+  {
+    "subject": "acai",
+    "predicate": "does not affect",
+    "object": "triglyceride levels"
+  },
+  {
+    "subject": "freeze-dried acai fruit pulp and skin powder",
+    "predicate": "may increase",
+    "object": "macrophage activity"
+  },
+  {
+    "subject": "low concentrations of the formulation",
+    "predicate": "exerts higher",
+    "object": "immunostimulatory action"
+  },
+  {
+    "subject": "acai polysaccharides",
+    "predicate": "may activate",
+    "object": "gamma delta t cell and myeloid cell activity"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "might have",
+    "object": "antidepressant effects"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "might have",
+    "object": "neuroprotective effects"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "ameliorates",
+    "object": "depression-like behaviors"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "induces",
+    "object": "electromyographic changes"
+  },
+  {
+    "subject": "acai juice",
+    "predicate": "increases",
+    "object": "telomerase reverse transcriptase mrna expression in the brain"
+  },
+  {
+    "subject": "acai",
+    "predicate": "might have",
+    "object": "neuroprotective effects"
+  },
+  {
+    "subject": "acai",
+    "predicate": "is thought to",
+    "object": "play a role"
+  },
+  {
+    "subject": "antioxidant",
+    "predicate": "activity of",
+    "object": "acai"
+  },
+  {
+    "subject": "anti-inflammatory",
+    "predicate": "activity of",
+    "object": "acai"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "native to",
+    "object": "north america"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "grows in",
+    "object": "florida"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "grows in",
+    "object": "texas"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "grows in",
+    "object": "asia"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "grows in",
+    "object": "africa"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "grows in",
+    "object": "india"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "has color",
+    "object": "deep red"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "lasts",
+    "object": "2-3 days"
+  },
+  {
+    "subject": "brazil",
+    "predicate": "largest commercial grower of",
+    "object": "acerola"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "used as",
+    "object": "juice"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "used in",
+    "object": "processed food products"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "used for",
+    "object": "dietary supplements"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "varies widely",
+    "object": "content"
+  },
+  {
+    "subject": "amounts of acerola fruit",
+    "predicate": "should not exceed",
+    "object": "tolerable upper intake level"
+  },
+  {
+    "subject": "tolerable upper intake level",
+    "predicate": "for adults",
+    "object": "2000 mg per day"
+  },
+  {
+    "subject": "pregnancy",
+    "predicate": "insufficient reliable information available",
+    "object": "acerola fruit"
+  },
+  {
+    "subject": "use of acerola fruit",
+    "predicate": "should avoid",
+    "object": "greater amounts than in foods"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "seems to be well tolerated orally",
+    "object": null
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has not been thoroughly evaluated safety outcomes",
+    "object": null
+  },
+  {
+    "subject": "acerola",
+    "predicate": "is linked with anaphylaxis",
+    "object": "rare"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "is linked with rectal obstruction",
+    "object": null
+  },
+  {
+    "subject": "doses of vitamin C greater than UL",
+    "predicate": "causes osmotic diarrhea",
+    "object": null
+  },
+  {
+    "subject": "acerola",
+    "predicate": "theoretically causes gastrointestinal upset",
+    "object": null
+  },
+  {
+    "subject": "5-year-old child",
+    "predicate": "ingested unknown quantity of acerola fruits daily for 7 days",
+    "object": null
+  },
+  {
+    "subject": "child",
+    "predicate": "presented with vomiting, abdominal pain and distension, tenesmus, constipation, and dehydration",
+    "object": null
+  },
+  {
+    "subject": "child",
+    "predicate": "required surgical disimpaction",
+    "object": "93205"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "is linked with pruritic rash, dyspnea, and tachycardia",
+    "object": "37 year old man"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "causes reaction",
+    "object": "allergic symptoms"
+  },
+  {
+    "subject": "patient",
+    "predicate": "has history",
+    "object": "hay fever, oral allergy symptoms, contact urticaria"
+  },
+  {
+    "subject": "patient",
+    "predicate": "tolerates",
+    "object": "apples and apple juice"
+  },
+  {
+    "subject": "patient's serum",
+    "predicate": "contains",
+    "object": "IgE antibodies to acerola"
+  },
+  {
+    "subject": "latex protein",
+    "predicate": "cross-reacts with",
+    "object": "acerola"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "helps prevent or treat",
+    "object": "vitamin c deficiency"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains a significant amount of",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might prevent",
+    "object": "scurvy"
+  },
+  {
+    "subject": "acerola juice",
+    "predicate": "successfully treated",
+    "object": "scurvy"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has interest for",
+    "object": "atherosclerosis"
+  },
+  {
+    "subject": "oral acerola",
+    "predicate": "has insufficient reliable information about",
+    "object": "atherosclerosis"
+  },
+  {
+    "subject": "oral acerola",
+    "predicate": "has interest for",
+    "object": "common cold"
+  },
+  {
+    "subject": "oral acerola",
+    "predicate": "has insufficient reliable information about",
+    "object": "common cold"
+  },
+  {
+    "subject": "oral acerola",
+    "predicate": "has interest for",
+    "object": "diarrhea"
+  },
+  {
+    "subject": "oral acerola",
+    "predicate": "has insufficient reliable information about",
+    "object": "diarrhea"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "condition"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "needs more evidence for",
+    "object": "rating"
+  },
+  {
+    "subject": "rating",
+    "predicate": "for",
+    "object": "uses"
+  },
+  {
+    "subject": "rating",
+    "predicate": "of",
+    "object": "acerola"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "dosing"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "administration"
+  },
+  {
+    "subject": "adult",
+    "predicate": "oral",
+    "object": "acerola"
+  },
+  {
+    "subject": "research",
+    "predicate": "is limited",
+    "object": "dosing"
+  },
+  {
+    "subject": "typical",
+    "predicate": "dosing",
+    "object": "unavailable"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "standardization"
+  },
+  {
+    "subject": "insufficient",
+    "predicate": "reliable information",
+    "object": "standardization"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interacts with",
+    "object": "alkylating agents"
+  },
+  {
+    "subject": "alkylating agents",
+    "predicate": "generates",
+    "object": "free radicals"
+  },
+  {
+    "subject": "antioxidants",
+    "predicate": "reduces",
+    "object": "effectiveness of alkylating agents"
+  },
+  {
+    "subject": "antioxidants",
+    "predicate": "might make",
+    "object": "alkylating chemotherapy more effective"
+  },
+  {
+    "subject": "cancer cells",
+    "predicate": "apoptosis interfered",
+    "object": "by oxidative stress"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interacts with",
+    "object": "aluminum salts"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "chelates",
+    "object": "aluminum"
+  },
+  {
+    "subject": "aluminum",
+    "predicate": "absorbed",
+    "object": "when in solution"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "provides",
+    "object": "more vitamin c than rda (if taken in high doses)"
+  },
+  {
+    "subject": "patients with renal failure",
+    "predicate": "should avoid",
+    "object": "acerola when taking aluminum-containing compounds"
+  },
+  {
+    "subject": "anticancer antibiotics",
+    "predicate": "interaction rating",
+    "object": "moderate"
+  },
+  {
+    "subject": "this combination (acerola and anticancer antibiotics)",
+    "predicate": "be cautious with",
+    "object": ""
+  },
+  {
+    "subject": "interaction",
+    "predicate": "severity",
+    "object": "high"
+  },
+  {
+    "subject": "occurrence",
+    "predicate": "of",
+    "object": "this interaction"
+  },
+  {
+    "subject": "level of evidence",
+    "predicate": "d",
+    "object": "theoretical based on pharmacology"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might reduce",
+    "object": "effectiveness of anticancer antibiotics"
+  },
+  {
+    "subject": "antioxidants",
+    "predicate": "might reduce",
+    "object": "activity of chemotherapy drugs that generate free radicals"
+  },
+  {
+    "subject": "anticancer antibiotics",
+    "predicate": "generate",
+    "object": "free radicals"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interacts with",
+    "object": "drugs"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "causes",
+    "object": "oxidative stress"
+  },
+  {
+    "subject": "oxidative stress",
+    "predicate": "affects",
+    "object": "apoptosis"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "cancer cells"
+  },
+  {
+    "subject": "more",
+    "predicate": "is needed",
+    "object": "determine"
+  },
+  {
+    "subject": "more",
+    "predicate": "determines",
+    "object": "effects"
+  },
+  {
+    "subject": "effects",
+    "predicate": "have",
+    "object": "antitumor antibiotic chemotherapy"
+  },
+  {
+    "subject": "aspirin",
+    "predicate": "interaction rating",
+    "object": "minor"
+  },
+  {
+    "subject": "this combination",
+    "predicate": "be watchful",
+    "object": "with"
+  },
+  {
+    "subject": "severity",
+    "predicate": "is",
+    "object": "mild"
+  },
+  {
+    "subject": "occurrence",
+    "predicate": "is",
+    "object": "unlikely"
+  },
+  {
+    "subject": "level of evidence",
+    "predicate": "is",
+    "object": "b (lower quality RCT)"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might reduce",
+    "object": "clearance"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acidification",
+    "predicate": "of urine",
+    "object": "by vitamin c can decrease"
+  },
+  {
+    "subject": "decrease",
+    "predicate": "can increase",
+    "object": "plasma salicylate levels"
+  },
+  {
+    "subject": "short-term use",
+    "predicate": "does not seem to affect",
+    "object": "urinary pH or salicylate excretion"
+  },
+  {
+    "subject": "vitamin c content of acerola",
+    "predicate": "is typically about",
+    "object": "2000 mg per 100 grams"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might interact",
+    "object": "estrogens"
+  },
+  {
+    "subject": "interaction",
+    "predicate": "rating",
+    "object": "minor"
+  },
+  {
+    "subject": "estrogens",
+    "predicate": "occurrence",
+    "object": "possible"
+  },
+  {
+    "subject": "severity",
+    "predicate": "level",
+    "object": "mild"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "prevents",
+    "object": "oxidation"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "regenerates",
+    "object": "oxidized estrogen"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "reduces",
+    "object": "sulfate conjugation"
+  },
+  {
+    "subject": "tissue levels",
+    "predicate": "are maximized",
+    "object": "when high"
+  },
+  {
+    "subject": "women",
+    "predicate": "who are deficient",
+    "object": "take supplements"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interaction",
+    "object": "warfarin"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "high doses of vitamin c",
+    "predicate": "reduces",
+    "object": "warfarin absorption"
+  },
+  {
+    "subject": "decreased prothrombin time",
+    "predicate": "occurs",
+    "object": "with two people"
+  },
+  {
+    "subject": "lower doses of vitamin c",
+    "predicate": "reduces",
+    "object": "warfarin absorption"
+  },
+  {
+    "subject": "vitamin c content of acerola",
+    "predicate": "is typically about",
+    "object": "2000 mg per 100 grams"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might increase",
+    "object": "absorption"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "dietary iron",
+    "predicate": "is affected by",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "individuals with iron deficiency",
+    "predicate": "are affected more by",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "counteracts",
+    "object": "inhibitors of iron absorption"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "can be used with",
+    "object": "rose hip"
+  },
+  {
+    "subject": "acerola and rose hip",
+    "predicate": "can increase",
+    "object": "vitamin c intake"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interacts with",
+    "object": "supplements"
+  },
+  {
+    "subject": "tolerable upper intake level",
+    "predicate": "of",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "tolerable upper intake level",
+    "predicate": "for",
+    "object": "adults"
+  },
+  {
+    "subject": "tolerable upper intake level",
+    "predicate": "is",
+    "object": "2000 mg vitamin c per day"
+  },
+  {
+    "subject": "concomitant use",
+    "predicate": "of",
+    "object": [
+      "acerola",
+      "vitamin c"
+    ]
+  },
+  {
+    "subject": "large amounts",
+    "predicate": "of",
+    "object": [
+      "acerola",
+      "vitamin C"
+    ]
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might increase",
+    "object": "risk of oxalate kidney stone formation"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "is metabolized to",
+    "object": "oxalic acid"
+  },
+  {
+    "subject": "increased consumption of vitamin c",
+    "predicate": "increases",
+    "object": "urinary concentration of oxalic acid"
+  },
+  {
+    "subject": "patients prone to oxalate stone formation",
+    "predicate": "appears to",
+    "object": "increase stone risk by 40%"
+  },
+  {
+    "subject": "supplemental vitamin c 1 gram per day",
+    "predicate": "appears to",
+    "object": "increase stone risk"
+  },
+  {
+    "subject": "men",
+    "predicate": "have been associated with",
+    "object": "higher risk of kidney stones"
+  },
+  {
+    "subject": "daily supplemental vitamin c doses as low as 250 mg",
+    "predicate": "have been associated with",
+    "object": "higher risk of kidney stones"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "might precipitate",
+    "object": "allergic reaction in people allergic to latex"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "causes",
+    "object": "pruritic rash"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "causes",
+    "object": "dyspnea"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "causes",
+    "object": "tachycardia"
+  },
+  {
+    "subject": "acerola juice",
+    "predicate": "consumption leads to",
+    "object": "reaction"
+  },
+  {
+    "subject": "his serum",
+    "predicate": "contains",
+    "object": "IgE antibodies to acerola"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "shows cross-reactivity with",
+    "object": "latex protein"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acetaminophen",
+    "predicate": "interacts with",
+    "object": "acerola"
+  },
+  {
+    "subject": "acetaminophen urine results",
+    "predicate": "affected by",
+    "object": "false negatives"
+  },
+  {
+    "subject": "methods based on hydrolysis and formation of an indophenol blue chromagen",
+    "predicate": "affected by",
+    "object": "false negatives"
+  },
+  {
+    "subject": "ast",
+    "predicate": "increased by",
+    "object": "acerola"
+  },
+  {
+    "subject": "methods",
+    "predicate": "used by",
+    "object": "some"
+  },
+  {
+    "subject": "results of serum tests relying on color reactions (redox reactions)",
+    "predicate": "affected by",
+    "object": "false increases"
+  },
+  {
+    "subject": "technicon sma 12/60",
+    "predicate": "used by",
+    "object": "some"
+  },
+  {
+    "subject": "bilirubin levels",
+    "predicate": "increased by",
+    "object": "acerola"
+  },
+  {
+    "subject": "serum test results measured by technicon sma 12/60 or colorimetric methods",
+    "predicate": "affected by",
+    "object": "false increases"
+  },
+  {
+    "subject": "carbamazepine levels",
+    "predicate": "increased by",
+    "object": "acerola"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "theorized to affect",
+    "object": "serum assay results"
+  },
+  {
+    "subject": "some methods",
+    "predicate": "measure",
+    "object": "creatinine"
+  },
+  {
+    "subject": "high doses of vitamin c",
+    "predicate": "can cause",
+    "object": "false increase in serum creatinine or urine test results"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "theorized to affect",
+    "object": "glucose levels"
+  },
+  {
+    "subject": "some methods",
+    "predicate": "measure",
+    "object": "glucose"
+  },
+  {
+    "subject": "urine test results",
+    "predicate": "measured by",
+    "object": "copper reduction methods"
+  },
+  {
+    "subject": "e.g., Clinitest",
+    "predicate": "examples of",
+    "object": "copper reduction methods"
+  },
+  {
+    "subject": "urine test results",
+    "predicate": "measured by",
+    "object": "glucose oxidase methods"
+  },
+  {
+    "subject": "e.g., Clinistix, Tes-Tape",
+    "predicate": "examples of",
+    "object": "glucose oxidase methods"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "theorized to affect",
+    "object": "ldh levels"
+  },
+  {
+    "subject": "some methods",
+    "predicate": "measure",
+    "object": "ldh"
+  },
+  {
+    "subject": "vitamin c",
+    "predicate": "can cause",
+    "object": "false decrease in results measured by Technicon SMA 12/60 and Abbott 100"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "interacts with",
+    "object": "lab tests"
+  },
+  {
+    "subject": "guaiac tests",
+    "predicate": "affected by",
+    "object": "vitamin c content in acerola"
+  },
+  {
+    "subject": "fecal occult blood testing",
+    "predicate": "requires",
+    "object": "acerola avoidance (48-72 hours)"
+  },
+  {
+    "subject": "theophylline levels",
+    "predicate": "affected by",
+    "object": "acerola"
+  },
+  {
+    "subject": "vitamin c in acerola",
+    "predicate": "causes",
+    "object": "false decrease in theophylline levels (some methods)"
+  },
+  {
+    "subject": "serum assay results",
+    "predicate": "affected by",
+    "object": "vitamin c (arter system or Ames Seralyzer photometer)"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "relates to",
+    "object": "overdose"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has no known treatment for",
+    "object": "overdose"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "affects",
+    "object": "bioavailability"
+  },
+  {
+    "subject": "acerola juice",
+    "predicate": "results in",
+    "object": "higher AUC"
+  },
+  {
+    "subject": "acerola juice",
+    "predicate": "leads to",
+    "object": "lower urine excretion"
+  },
+  {
+    "subject": "healthy Japanese males",
+    "predicate": "takes",
+    "object": "vitamin C in different forms"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "vitamin c"
+  },
+  {
+    "subject": "average vitamin c content",
+    "predicate": "is",
+    "object": "2000 mg/100g"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "beta-carotene"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "lutein"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "thiamine"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "riboflavin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "niacin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "pyridoxine"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "folic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "pantothenic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "malic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "glucose"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "fructose"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "sucrose"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "chlorogenic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "caffeic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "ferulic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "gallic acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "p-coumaric acid"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "astilbin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "proanthocyanidin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "limonene"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "glycosides of cyanidin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "glycosides of pelargonidin"
+  },
+  {
+    "subject": "acerola fruit",
+    "predicate": "contains",
+    "object": "glycosides of quercetin"
+  },
+  {
+    "subject": "acerola extracts",
+    "predicate": "reduces",
+    "object": "postprandial glucose levels"
+  },
+  {
+    "subject": "acerola extracts",
+    "predicate": "reduces",
+    "object": "glucose uptake and transport in intestinal cells"
+  },
+  {
+    "subject": "glycosides of polyphenols",
+    "predicate": "inhibit",
+    "object": "alpha-glucosidase"
+  },
+  {
+    "subject": "acerola extracts",
+    "predicate": "prevents",
+    "object": "advanced glycation end products"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has activity against",
+    "object": "staphylococcus epidermidis"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has activity against",
+    "object": "candida species"
+  },
+  {
+    "subject": "extracts of acerola fruit",
+    "predicate": "have cytotoxic activity",
+    "object": "human oral squamous cell carcinoma"
+  },
+  {
+    "subject": "extracts of acerola fruit",
+    "predicate": "have cytotoxic activity",
+    "object": "human submandibular gland carcinoma"
+  },
+  {
+    "subject": "extracts of acerola fruit",
+    "predicate": "can inhibit",
+    "object": "transporter molecules"
+  },
+  {
+    "subject": "extracts of acerola fruit",
+    "predicate": "confer multidrug resistance on",
+    "object": "some cancer cells"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "has antioxidant activity",
+    "object": "none"
+  },
+  {
+    "subject": "acerola",
+    "predicate": "enhances the effects of",
+    "object": "flavonoids in alfalfa and soy"
+  },
+  {
+    "subject": "glycosides of cyanidin, pelargonidin, and quercetin present in acerola",
+    "predicate": "have antioxidant effects",
+    "object": "none"
+  },
+  {
+    "subject": "glycosides of cyanidin, pelargonidin, and quercetin present in acerola",
+    "predicate": "act as free radical scavengers",
+    "object": "none"
+  },
+  {
+    "subject": "polysaccharides extracted from acerola",
+    "predicate": "attenuate fat deposition in the liver",
+    "object": "none"
+  },
+  {
+    "subject": "polysaccharides extracted from acerola",
+    "predicate": "attenuate hyperlipidemia",
+    "object": "none"
+  },
+  {
+    "subject": "polysaccharides extracted from acerola",
+    "predicate": "attenuate progression of NAFLD",
+    "object": "none"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is an ester of",
+    "object": "amino acid derivative"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is found in",
+    "object": "90632, 102126"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is most abundant",
+    "object": "in the body"
+  },
+  {
+    "subject": "l-carnitine",
+    "predicate": "is made in",
+    "object": "human brain, liver, and kidneys"
+  },
+  {
+    "subject": "l-carnitine",
+    "predicate": "from",
+    "object": "amino acids lysine and methionine"
+  },
+  {
+    "subject": "body",
+    "predicate": "can convert",
+    "object": "l-carnitine to acetyl-l-carnitine"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "can be converted",
+    "object": "by the body"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is used safely",
+    "object": "orally"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is used in doses",
+    "object": "up to 3 grams daily"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "has been used",
+    "object": "in clinical trials lasting up to 33 months"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is possibly safe",
+    "object": "parenterally"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is used parenterally",
+    "object": "under medical supervision"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is possibly safe",
+    "object": "short-term for children"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "has been safely used orally",
+    "object": "in children for up to 6 weeks"
+  },
+  {
+    "subject": "information about acetyl-l-carnitine",
+    "predicate": "is insufficient",
+    "object": "during pregnancy and lactation"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "is generally well tolerated",
+    "object": null
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes most common adverse effects",
+    "object": "agitation"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes most common adverse effects",
+    "object": "dry mouth"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes most common adverse effects",
+    "object": "headache"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes most common adverse effects",
+    "object": "insomnia"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes most common adverse effects",
+    "object": "reduced appetite"
+  },
+  {
+    "subject": "a metabolite of acetyl-l-carnitine",
+    "predicate": "causes fishy odor",
+    "object": "urine"
+  },
+  {
+    "subject": "a metabolite of acetyl-l-carnitine",
+    "predicate": "causes fishy odor",
+    "object": "breath"
+  },
+  {
+    "subject": "a metabolite of acetyl-l-carnitine",
+    "predicate": "causes fishy odor",
+    "object": "sweat"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "causes cardiovascular adverse effects",
+    "object": "high blood pressure"
+  },
+  {
+    "subject": "one patient in a pharmacokinetic study",
+    "predicate": "reports high blood pressure",
+    "object": "8 hours after taking acetyl-l-carnitine 500 mg"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "may cause dermatologic adverse effects",
+    "object": "rash"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "nausea"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "vomiting"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "diarrhea"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "constipation"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "hiccups"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "abdominal distension"
+  },
+  {
+    "subject": "a combination of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "may cause gastrointestinal adverse effects",
+    "object": "gastrointestinal upset or pain"
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "does not usually cause gastrointestinal adverse effects more often than placebo",
+    "object": null
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "may cause dry mouth",
+    "object": null
+  },
+  {
+    "subject": "orally administered acetyl-l-carnitine",
+    "predicate": "may cause anorexia",
+    "object": null
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "may cause",
+    "object": "diarrhea"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "may cause",
+    "object": "constipation"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "may cause",
+    "object": "dyspepsia"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "orally may cause",
+    "object": "headache"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "orally may cause",
+    "object": "insomnia"
+  },
+  {
+    "subject": "two patients",
+    "predicate": "reported",
+    "object": "paresthesia"
+  },
+  {
+    "subject": "two patients",
+    "predicate": "reported",
+    "object": "pain"
+  },
+  {
+    "subject": "two patients",
+    "predicate": "reported",
+    "object": "neuropathy"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "taken daily",
+    "object": "1000 mg"
+  },
+  {
+    "subject": "patient with bipolar I disorder",
+    "predicate": "took",
+    "object": "acetyl-l-carnitine 1000 mg twice daily"
+  },
+  {
+    "subject": "symptoms",
+    "predicate": "appeared",
+    "object": "3 days"
+  },
+  {
+    "subject": "symptoms",
+    "predicate": "worsened",
+    "object": "next week"
+  },
+  {
+    "subject": "patient",
+    "predicate": "advised",
+    "object": "discontinue acetyl-l-carnitine"
+  },
+  {
+    "subject": "manic symptoms",
+    "predicate": "disappeared",
+    "object": "3 days later"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "may cause",
+    "object": "agitation"
+  },
+  {
+    "subject": "people with alzheimer's disease",
+    "predicate": "report",
+    "object": "psychiatric disturbances"
+  },
+  {
+    "subject": "acetyl-l-carnitine metabolites",
+    "predicate": "can cause",
+    "object": "fishy odor"
+  },
+  {
+    "subject": "oral use of acetyl-l-carnitine and alpha-lipoic acid",
+    "predicate": "lead to",
+    "object": "foul smelling urine"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "improves",
+    "object": "age-related cognitive decline"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "taken",
+    "object": "1500-2000 mg daily for 3 months"
+  },
+  {
+    "subject": "elderly people",
+    "predicate": "experiences",
+    "object": "improved cognitive function and memory"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "improves",
+    "object": "age-related physical and mental fatigue"
+  },
+  {
+    "subject": "placebo",
+    "predicate": "results in",
+    "object": "4% reduction in physical fatigue"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "results in",
+    "object": "51% reduction in fatigue after exercise"
+  },
+  {
+    "subject": "intravenous acetyl-l-carnitine",
+    "predicate": "reduces",
+    "object": "cravings and other symptoms of withdrawal during alcohol detoxification"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "use",
+    "object": "disorder"
+  },
+  {
+    "subject": "adults",
+    "predicate": "have",
+    "object": "alcohol use disorder"
+  },
+  {
+    "subject": "adults",
+    "predicate": "are in",
+    "object": "withdrawal"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "administered",
+    "object": "slow infusion"
+  },
+  {
+    "subject": "infusion",
+    "predicate": "duration",
+    "object": "3-4 hours"
+  },
+  {
+    "subject": "days",
+    "predicate": "number",
+    "object": "10"
+  },
+  {
+    "subject": "adults",
+    "predicate": "followed by",
+    "object": "oral intake"
+  },
+  {
+    "subject": "oral intake",
+    "predicate": "daily dosage",
+    "object": "3 grams"
+  },
+  {
+    "subject": "adults",
+    "predicate": "improves",
+    "object": "cravings"
+  },
+  {
+    "subject": "anhedonia",
+    "predicate": "improvement",
+    "object": "observed"
+  },
+  {
+    "subject": "melancholic symptoms",
+    "predicate": "improvement",
+    "object": "observed"
+  },
+  {
+    "subject": "time to first drink",
+    "predicate": "increased",
+    "object": "compared with placebo"
+  },
+  {
+    "subject": "most symptom improvement",
+    "predicate": "occurs",
+    "object": "first week"
+  },
+  {
+    "subject": "adults",
+    "predicate": "taking",
+    "object": "additional 80 days"
+  },
+  {
+    "subject": "benefit",
+    "predicate": "unclear",
+    "object": "taking acetyl-l-carnitine orally for additional 80 days"
+  },
+  {
+    "subject": "small clinical trial",
+    "predicate": "in adults",
+    "object": "chronic alcohol use disorder and cognitive impairment"
+  },
+  {
+    "subject": "trial",
+    "predicate": "daily dosage",
+    "object": "2 grams"
+  },
+  {
+    "subject": "trial",
+    "predicate": "duration",
+    "object": "90 days"
+  },
+  {
+    "subject": "adults",
+    "predicate": "improves",
+    "object": "memory"
+  },
+  {
+    "subject": "visuospatial capacity",
+    "predicate": "improvement",
+    "object": "observed"
+  },
+  {
+    "subject": "placebo",
+    "predicate": "compared with",
+    "object": "improvement"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "may slow",
+    "object": "Alzheimer disease progression"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "might slow",
+    "object": "alzheimer disease progression"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "improve",
+    "object": "memory"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "affect",
+    "object": "some measures of cognitive function"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "affect",
+    "object": "behavioral performance"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "show effect",
+    "object": "early-onset alzheimer disease patients under 66 yrs old"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "compare with",
+    "object": "prescription medications"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "reduce",
+    "object": "depression symptoms"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "have effect",
+    "object": "dysthymia and depression patients"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "be most effective",
+    "object": "elderly patients"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "be at higher doses",
+    "object": "effective against depression"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "reduces",
+    "object": "depressive symptoms"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "compared to",
+    "object": "placebo"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "similar effects as",
+    "object": "conventional antidepressants"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "most effective when",
+    "object": "higher dosages"
+  },
+  {
+    "subject": "duration of follow-up",
+    "predicate": "does not influence",
+    "object": "results"
+  },
+  {
+    "subject": "baseline symptoms",
+    "predicate": "does not influence",
+    "object": "results"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "reduces",
+    "object": "pain"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "taken at doses of",
+    "object": "2-3 grams daily"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "unclear if can improve",
+    "object": "nerve conduction velocity"
+  },
+  {
+    "subject": "clinical research",
+    "predicate": "evaluating acetyl-l-carnitine",
+    "object": "for use in diabetic neuropathy",
+    "predicate2": "shows benefit"
+  },
+  {
+    "subject": "evidence",
+    "predicate": "of overall low quality"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "taking 2-3 grams daily",
+    "object": "modestly reduces pain scores"
+  },
+  {
+    "subject": "lower doses of acetyl-l-carnitine",
+    "predicate": "improve pain scores to a similar extent",
+    "object": "as 2-3 grams daily"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "seems to increase",
+    "object": "nerve fibers"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "regenerate",
+    "object": "nerve fiber clusters"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "improve",
+    "object": "vibratory sensations"
+  },
+  {
+    "subject": "12 months",
+    "predicate": "compare with",
+    "object": "placebo"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "decrease",
+    "object": "pain"
+  },
+  {
+    "subject": "6 months",
+    "predicate": "occur",
+    "object": "effect"
+  },
+  {
+    "subject": "patients with diabetes",
+    "predicate": "effective for",
+    "object": "reducing pain"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "as effective as",
+    "object": "methylcobalamin"
+  },
+  {
+    "subject": "neuropathy disability score",
+    "predicate": "measure",
+    "object": "symptoms"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "improve",
+    "object": "electrophysiological parameters"
+  },
+  {
+    "subject": "diabetic neuropathy",
+    "predicate": "conflicting research on",
+    "object": "nerve conduction velocity"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "relates to",
+    "object": "male infertility"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "combined with",
+    "object": "l-carnitine"
+  },
+  {
+    "subject": "oral acetyl-l-carnitine",
+    "predicate": "may increase",
+    "object": "sperm motility"
+  },
+  {
+    "subject": "acetyl-l-carnitine alone",
+    "predicate": "unclear if improves",
+    "object": "sperm function or pregnancy outcomes"
+  },
+  {
+    "subject": "some research",
+    "predicate": "disagrees",
+    "object": "taking acetyl-l-carnitine in combination with l-carnitine"
+  },
+  {
+    "subject": "usual doses",
+    "predicate": "daily for 3-6 months",
+    "object": "increase sperm motility"
+  },
+  {
+    "subject": "evidence",
+    "predicate": "related to the effect on",
+    "object": "sperm count and morphology is mixed"
+  },
+  {
+    "subject": "taking l-carnitine",
+    "predicate": "unclear if increases",
+    "object": "odds of pregnancy"
+  },
+  {
+    "subject": "one meta-analysis",
+    "predicate": "shows that taking",
+    "object": "carnitines in combination increases the odds of pregnancy by 3.7-fold over placebo"
+  },
+  {
+    "subject": "most clinical research",
+    "predicate": "investigating the effect",
+    "object": "of l-carnitine alone or with acetyl L-carnitine on pregnancy rates disagrees"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "taken with",
+    "object": "nonsteroidal anti-inflammatory drugs"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "administered",
+    "object": "2 months"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "associated with",
+    "object": "increase in sperm count"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "associated with",
+    "object": "increase in motility"
+  },
+  {
+    "subject": "abacterial prostatovesiculoepididymitis",
+    "predicate": "affected by",
+    "object": "acetyl-l-carnitine"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "evaluated in combination with",
+    "object": "other ingredients"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "combined with",
+    "object": "L-carnitine"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "combined with",
+    "object": "L-arginine"
+  },
+  {
+    "subject": "acetyl-l-carnitine",
+    "predicate": "combined with",
+    "object": "Panax ginseng"
+  },
+  {
+    "subject": "asthenospermia",
+    "predicate": "treated by",
+    "object": "no treatment"
+  },
+  {
+    "subject": "asthenospermia",
+    "predicate": "improved by",
+    "object": "combination therapy"
+  },
+  {
+    "subject": "chronic prostatitis due to Chlamydia trachomatis infection",
+    "predicate": "treated with",
+    "object": "prulifloxacin alone"
+  },
+  {
+    "subject": "chronic prostatitis due to Chlamydia trachomatis infection",
+    "predicate": "improved by",
+    "object": "combination therapy"
+  },
+  {
+    "subject": "small clinical studies",
+    "predicate": "investigated",
+    "object": "effects of specific combination"
   }
 ]
