@@ -8,6 +8,14 @@ import pickle
 from rank_bm25 import BM25Okapi
 from flask import Flask, request, Response, stream_with_context
 from flask_cors import CORS
+from neo4j import GraphDatabase
+
+def get_relationships(tx, name):
+                query = """
+                MATCH (n {name: $name})-[r]-(m)
+                RETURN n, r, m
+                """
+                return list(tx.run(query, name=name))
 
 def generate(user_prompt, url, payload):
     with requests.post(url, json=payload, stream=True) as response:
@@ -27,14 +35,14 @@ def run_query():
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
-    with open("../CorpusData/natmed_documents.json", "r", encoding="utf-8") as f:
+    with open("../Data/CorpusData/natmed_documents.json", "r", encoding="utf-8") as f:
         documents = json.load(f)
     
-    index = faiss.read_index("../CorpusData/natmed_data.faiss")
+    index = faiss.read_index("../Data/CorpusData/natmed_data.faiss")
 
     todump = []
 
-    with open("../Evaluation/evaluationquestions.txt", "r", encoding="utf-8") as f:
+    with open("../Evaluation/kgtestqs.txt", "r", encoding="utf-8") as f:
         for line in f:
             user_prompt = line.strip()
             print(user_prompt)
@@ -49,24 +57,121 @@ def run_query():
                 #print(result["id"])
             
             #BM25 RETRIEVAL.
-            # def tokenize(text):
-            #     return re.findall(r"\w+", text.lower())
+            def tokenize(text):
+                return re.findall(r"\w+", text.lower())
             
-            # with open("../CorpusData/bm25_index.pkl", "rb") as f:
-            #     data = pickle.load(f)
+            with open("../Data/CorpusData/bm25_index.pkl", "rb") as f:
+                data = pickle.load(f)
 
-            # passages = data["documents"]
-            # bm25 = data["bm25"]
+            passages = data["documents"]
+            bm25 = data["bm25"]
 
-            # tokenized_query = tokenize(user_prompt)
+            tokenized_query = tokenize(user_prompt)
 
-            # scores = bm25.get_scores(tokenized_query)
-            # top_indices = scores.argsort()[::-1][:2]
+            scores = bm25.get_scores(tokenized_query)
+            top_indices = scores.argsort()[::-1][:2]
 
-            # for idx in top_indices:
-            #     context += str(passages[idx]) + "                   "
-            #     #print(passages[idx], scores[idx])
+            for idx in top_indices:
+                context += str(passages[idx]) + "                   "
+                #print(passages[idx], scores[idx])
             
+
+            # KG SECTION
+            # sysprompt = """
+            # You are an AI that will help me extract the word of focus in questions that a user is asking me. They are asking me a question related to a supplement or medication.
+            # I need you to give me the item of focus in their question. 
+            # For Example:
+            # - What are the possible negative effects of creatine? -> creatine
+            # - Is my vitamin a supplement causing my skin to be itchy? -> vitamin a
+            # - Why should I take Vitamin B12 supplements? -> vitamin b12
+
+            # ONLY return the item of focus. Your response must also be in LOWER CASE ONLY.
+
+            # User's Question:
+
+            # """
+
+            # url = "http://10.21.58.251:11434/api/generate"
+
+            # payload = {
+            #     "model": "mistral",
+            #     "prompt": sysprompt + user_prompt,
+            #     "stream": True
+            # }
+
+            # focus = ""
+            # with requests.post(url, json=payload, stream=True) as response:
+            #     for line in response.iter_lines():
+                    
+            #         if line:
+            #             data = json.loads(line.decode("utf-8"))
+            #             token = data.get("response", "")
+            #             focus += token
+
+            # print(focus)
+
+            # relevant_kg_results = """
+            # Relevant Facts from the NatMedPro Knowledge Graph:
+
+            # """
+            # try:
+                 
+            #     uri = "bolt://localhost:7687"
+            #     user = "neo4j"
+            #     password = "CSE573PASS"
+
+            #     driver = GraphDatabase.driver(uri, auth=(user, password))
+
+            #     kg_results = ""
+
+            #     with driver.session() as session:
+            #         result = session.execute_write(get_relationships, focus.strip().lower())
+
+            #         for record in result:
+            #             n = record["n"]
+            #             r = record["r"]
+            #             m = record["m"]
+
+            #             kg_results += f"{n['name']} {r.type} {m['name']}    "
+
+
+            #     sysprompt = f"""
+            #     You are an AI that will help me determine the relevant facts to the question a user is asking me. I will give you a list of facts and you will return to me the ones that are VERY DIRECTLY relevant
+            #     to answering the user's question. You can ONLY return up to 3 of the most relevant facts. If the facts are not relevant to answering the question, then do not return them. Do not try to force 
+            #     3 facts, it is ok to return less, or even none. DO NOT return facts that do not directly relate to answering the user's question. 
+
+            #     YOU CAN ONLY RETURN UP TO 3 FACTS MAXIMUM. THIS IS A HARD LIMIT THAT CANNOT BE EXCEEDED. 3 FACTS AT MOST.
+
+            #     Facts:
+            #     {kg_results}
+
+            #     User's Question:
+
+            #     """
+
+            #     url = "http://10.21.58.251:11434/api/generate"
+
+            #     payload = {
+            #         "model": "mistral",
+            #         "prompt": sysprompt + user_prompt,
+            #         "stream": True
+            #     }
+
+            #     with requests.post(url, json=payload, stream=True) as response:
+            #         for line in response.iter_lines():
+                        
+            #             if line:
+            #                 data = json.loads(line.decode("utf-8"))
+            #                 token = data.get("response", "")
+            #                 relevant_kg_results += token
+            # except:
+            #      pass
+
+            # print("KG Res:", relevant_kg_results)
+
+
+            ### END KG SECTION ###
+
             context = re.sub(r'\([\d,\s]+\)', '', context)
 
 
@@ -81,6 +186,7 @@ def run_query():
 
                     Information:
                     "{context}"
+
 
                     User question:
                     {user_prompt}
@@ -104,7 +210,7 @@ def run_query():
             print() #newline
             print() #newline
 
-    with open("../Evaluation/TestResponsesVectorONLY.json", "w", encoding="utf-8") as f:
+    with open("../Evaluation/nokgtestqsresponses.json", "w", encoding="utf-8") as f:
         json.dump(todump, f, ensure_ascii=False, indent=4)
 
 

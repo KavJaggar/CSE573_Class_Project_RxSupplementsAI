@@ -31,24 +31,27 @@ def run_query():
     for result in results:
         context += result["id"] + ": " + result["text"] + "                     "
     
-    #BM25 RETRIEVAL. DOES NOT WORK VERY WELL. JUST RETURNS NONSENSE IN TESTING SO FAR. BUT MODEL PERFORMS WELL WITH NOT BEING CONFUSED BY NONSENSICAL CONTEXT.
-    # def tokenize(text):
-    #     return re.findall(r"\w+", text.lower())
+    #BM25 RETRIEVAL
+    def tokenize(text):
+        return re.findall(r"\w+", text.lower())
     
-    # with open("../CorpusData/bm25_index.pkl", "rb") as f:
-    #     data = pickle.load(f)
+    with open("../Data/CorpusData/bm25_index.pkl", "rb") as f:
+        data = pickle.load(f)
 
-    # passages = data["documents"]
-    # bm25 = data["bm25"]
+    passages = data["documents"]
+    bm25 = data["bm25"]
 
-    # tokenized_query = tokenize(user_prompt)
+    tokenized_query = tokenize(user_prompt)
 
-    # scores = bm25.get_scores(tokenized_query)
-    # top_indices = scores.argsort()[::-1][:2]
+    scores = bm25.get_scores(tokenized_query)
+    top_indices = scores.argsort()[::-1][:2]
 
-    # for idx in top_indices:
-    #     context += str(passages[idx]) + "                   "
+    for idx in top_indices:
+        context += str(passages[idx]) + "                   "
     #     print(passages[idx], scores[idx])
+
+    #KG RETRIEVAL
+    
     
     context = re.sub(r'\([\d,\s]+\)', '', context)
 
