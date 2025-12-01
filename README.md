@@ -14,7 +14,7 @@ RxSupplementsAI is a RAG-based question-answering system designed to provide acc
 
 - 🔍 **Hybrid Retrieval System** - Vector similarity search (FAISS) with BM25 fallback
 - 🧠 **LLM-Powered Responses** - Mistral model via Ollama for natural language generation
-- 📚 **Large Knowledge Base** - 30,566+ documents from authoritative sources
+- 📚 **Large Knowledge Base** - 30,566+ documents 
 - 💬 **Interactive Chat Interface** - Modern React-based web application
 - 📊 **Source Citations** - All answers include citations to original sources
 
