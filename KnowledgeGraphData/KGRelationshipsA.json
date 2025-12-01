@@ -1,0 +1,52 @@
+[
+  {
+    "subject": "abscess root",
+    "predicate": "is",
+    "object": "plant"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has been used for",
+    "object": "fever"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has been used for",
+    "object": "cough"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has been used for",
+    "object": "common cold"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "has been used for",
+    "object": "inflammation"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "relates to",
+    "object": "safety"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "applies to",
+    "object": "pregnancy"
+  },
+  {
+    "subject": "abscess root",
+    "predicate": "applies to",
+    "object": "lactation"
+  },
+  {
+    "subject": "information",
+    "predicate": "is of type",
+    "object": "reliable"
+  },
+  {
+    "subject": "information",
+    "predicate": "is of type",
+    "object": "insufficient"
+  }
+]

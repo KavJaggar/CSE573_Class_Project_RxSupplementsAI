@@ -29,8 +29,7 @@ def run_query():
     results = [documents[i] for i in I[0]]
     context = ""
     for result in results:
-        context += "Source: NatMedPro" + "-" + result["id"] + ": " + result["text"] + "                     "
-        print(result["id"])
+        context += result["id"] + ": " + result["text"] + "                     "
     
     #BM25 RETRIEVAL. DOES NOT WORK VERY WELL. JUST RETURNS NONSENSE IN TESTING SO FAR. BUT MODEL PERFORMS WELL WITH NOT BEING CONFUSED BY NONSENSICAL CONTEXT.
     # def tokenize(text):
@@ -55,27 +54,27 @@ def run_query():
 
 
     prompt = f"""
-            You are a helpful medical assistant. 
-            ONLY use the information provided below only to answer the user's question. 
-            Do not mention the information, the source, or that you were given context. 
-            Do not say “according to the context,” “the document says,” or anything similar.
+                    You are a helpful medical assistant. 
+                    ONLY use the information provided below only to answer the user's question. 
+                    Do not mention the information, the source, or that you were given context. 
+                    Do not say “according to the context,” “the document says,” or anything similar.
 
-            If the information is relevant, incorporate it naturally into your human-like answer. 
-            If it is not relevant, tell the user you do not know. 
+                    If the information is relevant, incorporate it naturally into your human-like answer. 
+                    If it is not relevant, tell the user you do not know. 
 
-            Information:
-            "{context}"
+                    Information:
+                    "{context}"
 
-            User question:
-            {user_prompt}
+                    User question:
+                    {user_prompt}
 
-            Write a direct answer to the user and do not provide any information not necessary to answer their question. 
-            Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
-
-            """
+                    Write a direct answer to the user and do not provide any information not necessary to answer their question. If some information does not relate to the user question, just ignore it.
+                    Include citations to the sources of the information you use at the end of your answer. You can ONLY cite the sources found in the given context. ONLY the name of the source as provided.
+                    DO NOT use any sources of information that are not explicitly provided to you.
+                    """
     
     #print(prompt)
-    url = "http://localhost:11434/api/generate"
+    url = "http://10.21.58.251:11434/api/generate"
 
     payload = {
         "model": "mistral",
