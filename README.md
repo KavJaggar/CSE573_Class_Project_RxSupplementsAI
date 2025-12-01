@@ -241,33 +241,6 @@ The system was evaluated using 50 curated test questions covering:
 
 ---
 
-## 🔧 Configuration
-
-### Backend Configuration (`Scripts/query_phi.py`)
-
-```python
-# Ollama endpoint
-url = "http://localhost:11434/api/generate"
-
-# Model selection
-payload = {
-    "model": "mistral",  # Can change to phi3, llama2, etc.
-    "stream": True
-}
-
-# Top-k retrieval results
-D, I = index.search(q_emb, 3)  # Retrieves top 3 documents
-```
-
-### Frontend Configuration (`WebApp/my-react-app/src/Chat.jsx`)
-
-```javascript
-// API endpoint
-const response = await fetch("http://localhost:8181/run_query", {...});
-```
-
----
-
 ## 👥 Team - Group 21
 
 - Kavinkumaar Jaganathan
