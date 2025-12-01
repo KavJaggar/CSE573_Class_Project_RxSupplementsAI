@@ -19,10 +19,10 @@ def run_query():
     
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
-    with open("../CorpusData/natmed_documents.json", "r", encoding="utf-8") as f:
+    with open("../Data/CorpusData/natmed_documents.json", "r", encoding="utf-8") as f:
         documents = json.load(f)
     
-    index = faiss.read_index("../CorpusData/natmed_data.faiss")
+    index = faiss.read_index("../Data/CorpusData/natmed_data.faiss")
 
     q_emb = model.encode([user_prompt], convert_to_numpy=True)
     D, I = index.search(q_emb, 3)
