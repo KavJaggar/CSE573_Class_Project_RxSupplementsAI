@@ -22,7 +22,7 @@ RxSupplementsAI is a RAG-based question-answering system designed to provide acc
 
 ## 🏗️ System Architecture
 
-ARCHITECTURE IMAGE HERE
+![System Architecture](Architecture.png)
 
 ---
 
